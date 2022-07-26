@@ -1,0 +1,360 @@
+.calculator {
+  background-color: $pink-light;
+  border-radius: 16px;
+  padding: 72px 60px 37px 60px;
+  justify-content: space-between;
+  gap: 24px;
+  display: grid;
+  grid-template-areas: 'a b' 'c c';
+  align-items: start;
+
+
+  input:before {
+    transition: border ease .3s;
+  }
+
+  form {
+    margin-top: 28px;
+    font-size: 16px;
+    max-width: 904px;
+
+    .pregnant {
+      display: flex;
+      gap: 8px;
+      align-items: center;
+      color: $grey-middle;
+      font-size: 18px;
+      font-weight: 500;
+
+      label {
+        align-items: center;
+        display: flex;
+        gap: 12px;
+
+        input {
+          width: 19px;
+          height: 19px;
+          background: transparent;
+          border: 1px solid $grey-middle-light;
+          border-radius: 3px;
+        }
+      }
+    }
+
+    .wrapper {
+      display: flex;
+      flex-direction: row;
+
+      &.global {
+        margin-top: 28px;
+        padding: 24px;
+        background: $white;
+        border-radius: 12px;
+        flex-direction: column;
+      }
+
+      &.info {
+        gap: 44px;
+
+        .wrapper-item {
+          display: flex;
+          flex-direction: column;
+
+          label {
+            font-weight: 500;
+            margin-bottom: 12px;
+          }
+
+          div {
+            display: flex;
+            gap: 16px;
+          }
+
+          &:last-child {
+            flex-direction: row;
+            gap: 24px;
+
+            div {
+              flex-direction: column;
+              gap: 0;
+            }
+          }
+
+          input[type = 'radio'] {
+            appearance: none;
+
+            &:before {
+              content: attr(label);
+              padding: 13px 30px;
+              border: 1px solid $grey-light;
+              border-radius: 8px;
+              text-align: center;
+              font-size: 16px;
+              display: flex;
+            }
+
+            &:checked:before {
+              border: 1px solid $green;
+            }
+          }
+
+          input[type = "number"] {
+            display: flex;
+            position: relative;
+            max-width: 120px;
+            border: 1px solid $grey-light;
+            outline: none;
+            padding: 13px;
+            border-radius: 8px;
+            -moz-appearance: textfield;
+            height: 100%;
+            font-size: 16px;
+            transition: border ease .3s;
+
+            &::-webkit-outer-spin-button,
+            &::-webkit-inner-spin-button {
+              -webkit-appearance: none;
+              margin: 0;
+            }
+
+            &::-webkit-input-placeholder {
+              position: absolute;
+              left: 62px;
+              top: 50%;
+              transform: translateY(-50%);
+              font-size: 16px;
+            }
+
+            &:focus {
+              border: 1px solid $green;
+            }
+          }
+        }
+      }
+
+
+      &.goal {
+        flex-direction: column;
+        margin-top: 48px;
+
+        label {
+          font-weight: 500;
+          margin-bottom: 12px;
+        }
+
+        .wrapper-item {
+          display: flex;
+          gap: 16px;
+
+          label {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding-right: 10px;
+            margin-bottom: 0;
+            font-weight: 400;
+
+            svg {
+
+            }
+          }
+
+          input[type = 'radio'] {
+            appearance: none;
+
+            &:before {
+              content: attr(label);
+              padding: 13px 0px 13px 20px;
+              width: calc(100% + 60px);
+              border: 1px solid $grey-light;
+              border-radius: 8px;
+              text-align: center;
+              font-size: 16px;
+              display: flex;
+            }
+
+            &:checked:before {
+              border: 1px solid $green;
+            }
+
+          }
+        }
+      }
+
+      &.activity {
+        flex-direction: column;
+        margin-top: 48px;
+        gap: 12px;
+
+        label {
+          font-weight: 500;
+        }
+
+        .wrapper-item {
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          gap: 16px;
+
+          div {
+            label {
+              transition: border ease .3s;
+              display: block;
+              flex-wrap: wrap;
+              border: 1px solid $grey-middle-light;
+              height: 100%;
+              width: 100%;
+              padding: 20px;
+              cursor: pointer;
+              border-radius: 8px;
+              max-height: 134px;
+              position: relative;
+
+              svg {
+                position: absolute;
+                right: 20px;
+                align-self: end;
+              }
+
+              p {
+                font-weight: 400;
+                margin-top: 10px;
+                font-size: 14px;
+                color: $grey-middle;;
+              }
+            }
+
+            input[type="radio"] {
+              opacity: 0;
+              width: 0;
+              height: 0;
+            }
+
+            input[type="radio"]:active ~ label {
+              opacity: 1;
+            }
+
+            input[type="radio"]:checked ~ label {
+              opacity: 1;
+              border: 1px solid $green;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .left {
+    grid-area: a;
+  }
+
+  .right {
+    grid-area: b;
+    display: block;
+    max-width: 440px;
+
+    p {
+      font-size: 20px;
+    }
+
+    .manager {
+      display: flex;
+      align-items: center;
+      gap: 46px;
+      margin-top: 60px;
+
+      div {
+        display: flex;
+        align-items: center;
+      }
+
+      &-person {
+        gap: 20px;
+      }
+
+      &-link {
+        gap: 12px;
+      }
+
+      p {
+        font-size: 14px;
+        color: $grey;
+      }
+    }
+
+    .calculated {
+      margin-top: 17px;
+      border-radius: 12px;
+      background-color: $white;
+      padding: 40px;
+      display: flex;
+      flex-direction: column;
+
+      p {
+        font-size: 16px;
+        color: $grey;
+      }
+
+      &-recommendation {
+        margin-top: 24px;
+      }
+
+      #calculated {
+        &-value {
+          margin-top: 16px;
+          font-size: 32px;
+          font-weight: 700;
+          padding-bottom: 24px;
+          border-bottom: 1px solid $grey-light;
+          color: $green;
+          display: flex;
+          width: 100%;
+        }
+
+        &-program {
+          font-weight: 700;
+          font-size: 32px;
+          margin-top: 16px;
+        }
+
+        &-recommendation {
+          border-radius: 32px;
+          border: 1px solid $green;
+          display: flex;
+          width: fit-content;
+          gap: 3px;
+          padding: 6px 16px;
+          margin-top: 8px;
+        }
+
+        &-link {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          min-height: 64px;
+          gap: 12px;
+          width: 100%;
+          background: linear-gradient(0deg, #A9D953, #A9D953), #33D16D;
+          border-radius: 100px;
+          outline: none;
+          border: none;
+          font-size: 18px;
+          color: $white;
+          text-transform: uppercase;
+          font-weight: 600;
+          margin-top: 27px;
+        }
+      }
+    }
+  }
+
+  .bottom {
+    width: fit-content;
+    cursor: pointer;
+    display: flex;
+    gap: 12px;
+    grid-area: c;
+    font-size: 14px;
+    color: $grey;
+  }
+
+}

@@ -1,9 +1,125 @@
-
 header {
   width: 100%;
-  height: 80px;
+  min-height: 80px;
+  padding: 0 84px;
   display: flex;
+  align-items: center;
+  font-size: 16px;
+  font-family: Commissioner;
   justify-content: center;
-  box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.2);
-  background-color: rgba(255, 255, 255, 0.8);
+
+  a {
+    transition: all ease-in-out 0.3s;
+
+    &:hover {
+      color: #9BD03D;
+    }
+  }
+
+  .header {
+
+    &-wrapper {
+      max-width: 1488px;
+      display: flex;
+      width: 100%;
+      height: 100%;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    &-city {
+      position: relative;
+      min-width: 160px;
+
+      .current {
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        font-weight: 500;
+
+        svg {
+          &:first-child {
+            margin-right: 6px;
+          }
+
+          &:last-child {
+            transition: all ease .3s;
+            margin-left: 16px;
+            transform: rotate(180deg);
+
+            &.active {
+              transform: rotate(0deg);
+            }
+          }
+        }
+      }
+
+      .hidden {
+        font-weight: 400;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        opacity: 0;
+        position: absolute;
+        top: calc(100% + 17px);
+        left: 0;
+        transition: all ease .3s;
+        border-bottom-left-radius: 8px;
+        border-bottom-right-radius: 8px;
+        z-index: -5;
+
+        a {
+          padding: 12px;
+
+          &:last-child {
+            border-bottom-left-radius: 8px;
+            border-bottom-right-radius: 8px;
+          }
+        }
+
+        &.active {
+          z-index: 5;
+          overflow: visible;
+          opacity: 1;
+          background-color: #fff;
+
+          a {
+            transition: all ease .3s;
+
+            &:hover {
+              background-color: #F2F9E5;
+            }
+          }
+        }
+      }
+    }
+
+    &-nav {
+      ul {
+        display: flex;
+        gap: 25px;
+      }
+    }
+
+    &-phone {
+
+    }
+
+    &-button {
+      min-width: 175px;
+      min-height: 48px;
+      background: transparent;
+      outline: none;
+      text-transform: uppercase;
+      font-size: 14px;
+      font-weight: 500;
+      border: 1px solid #040E07;
+      border-radius: 24px;
+      transition: all ease .3s;
+      &:hover {
+        background: #A9D953;
+        border: transparent;
+      }
+    }
+  }
 }

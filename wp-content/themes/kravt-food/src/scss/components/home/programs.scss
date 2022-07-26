@@ -1,0 +1,180 @@
+.programs {
+  margin-top: 160px;
+  max-width: 1368px;
+
+  h2 {
+    align-self: start;
+  }
+
+  .wrapper {
+    margin-top: 40px;
+    gap: 24px;
+    display: grid;
+    grid-template-areas: 'a a b b c c' 'd d d e e e';
+    grid-template-columns: repeat(6, 1fr);
+
+    &-item {
+      display: flex;
+      flex-direction: column;
+      padding: 32px 20px;
+      border-radius: 12px;
+
+      .text {
+
+        p {
+          margin-top: 20px;
+          font-size: 16px;
+          line-height: 140%;
+          color: $black-middle;
+          opacity: 0.7;
+
+          &:first-child {
+            font-size: 36px;
+            line-height: 120%;
+            color: black;
+            opacity: 1;
+          }
+        }
+      }
+
+      .images {
+        position: relative;
+        width: 248px;
+        height: 154px;
+        margin-top: auto;
+
+        img {
+          position: absolute;
+          top: 0;
+
+          &:first-child {
+            left: 0px;
+          }
+
+          &:last-child {
+            top: -4px;
+            right: 0px;
+            z-index: 1;
+          }
+        }
+
+      }
+
+      button {
+        max-width: 248px;
+        min-height: 46px;
+        background: transparent;
+        border-radius: 100px;
+        font-weight: 600;
+        font-size: 16px;
+        transition: all ease .3s;
+        border: 1px solid transparent;
+        margin-top: 36px;
+
+      }
+
+      &:hover button {
+        color: $white !important;
+      }
+
+      &:nth-child(1) {
+        grid-area: a;
+        background-color: $green-darker;
+
+        button {
+          border-color: $green-dark;
+          color: $green-light;
+
+        }
+
+        &:hover button {
+          background: $green-light;
+          border-color: $green-light;
+        }
+      }
+
+      &:nth-child(2) {
+        grid-area: b;
+        background-color: $grey-lighter;
+
+        button {
+          border-color: $purple;
+          color: $purple-light;
+
+        }
+
+        &:hover button {
+          background: $purple-light;
+          border-color: $purple-light;
+        }
+      }
+
+      &:nth-child(3) {
+        grid-area: c;
+        background-color: $blue-lighter;
+
+        button {
+          border-color: rgba(182, 224, 255, 1);
+          color: $blue;
+
+        }
+
+        &:hover button {
+          border-color: $blue;
+          background: $blue;
+        }
+      }
+
+      &:nth-child(4) {
+        grid-area: d;
+        background-color: $yellow-lighter;
+
+        button {
+          border-color: $yellow-light;
+          color: $yellow;
+
+        }
+
+        &:hover button {
+          background: $yellow;
+          border-color: $yellow;
+        }
+      }
+
+      &:nth-child(5) {
+        grid-area: e;
+        background-color: $red-lighter;
+
+        button {
+          border-color: rgba(237, 85, 71, 0.32);
+          color: $red;
+
+        }
+
+        &:hover button {
+          background: $red;
+          border-color: $red;
+        }
+      }
+
+      &:nth-child(4), &:nth-child(5) {
+        display: grid;
+        grid-template-areas: 'a b' 'c c';
+        gap: 28px;
+
+        .text {
+          grid-area: a;
+        }
+
+        .images {
+          grid-area: b;
+        }
+
+        button {
+          grid-area: c;
+        }
+      }
+    }
+
+  }
+}
