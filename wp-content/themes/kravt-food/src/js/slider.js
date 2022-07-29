@@ -17,10 +17,10 @@ function slider() {
         interval: 6000,
         arrows: false,
     });
+
     document.getElementsByClassName('content')[0].children[0].classList.add('active');
 
     mainSlider.on('active', () => {
-        // console.log(document.getElementsByClassName())
         mainSlider.Components.Slides.get().forEach((elem) => {
             if (elem.slide.classList.contains('is-active') && !elem.slide.classList.contains('splide__slide--clone')) {
                 console.log(elem.index);
@@ -32,15 +32,13 @@ function slider() {
         })
     })
 
-    var n = 1
+    var n = 1;
     mainSlider.on('pagination:mounted', function (data) {
         data.list.classList.add('splide__pagination--custom');
-
         data.items.forEach(function (item) {
             item.button.textContent = String(dataSlider[n++]);
         });
     });
-
     mainSlider.mount();
 
     new Splide('.mini-slider', {
@@ -49,6 +47,19 @@ function slider() {
         rewind: true,
 
     }).mount();
+
+    new Splide('.menu', {
+        type: 'slider',
+        pagination: false,
+        perPage: 1,
+    }).mount();
+
+    new Splide('.peoples', {
+        type: 'slider',
+        pagination: false,
+        perPage: 1,
+    }).mount();
+
 }
 
 export default slider();

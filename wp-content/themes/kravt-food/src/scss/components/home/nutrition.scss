@@ -178,71 +178,130 @@
           padding: 20px;
           height: fit-content;
 
-          span {
-            &.head {
-              display: flex;
-              width: 100%;
-              justify-content: space-between;
-              align-items: center;
-              color: $green;
-              font-weight: 600;
-              font-size: 28px;
-              line-height: 130%;
+          .head {
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+            align-items: center;
+            color: $green;
+            font-weight: 600;
+            font-size: 28px;
+            line-height: 130%;
 
-              p {
-                font-weight: 400;
-                font-size: 16px;
-                line-height: 140%;
-                color: $grey;
-              }
+            span {
+              font-weight: 400;
+              font-size: 16px;
+              line-height: 140%;
+              color: $grey;
             }
+
           }
 
-          div {
+          .select {
             margin-top: 40px;
             display: flex;
-            flex-direction: column;
-            gap: 40px;
-          }
+            flex-basis: auto;
+            gap: 8px;
 
-          &:nth-child(1), &:nth-child(2) {
-            span {
-              display: flex;
-              align-items: center;
-              gap: 15px;
+            select {
+              border: 1px solid $grey-light;
+              border-radius: 8px;
+              padding: 23px 20px;
+              font-size: 14px;
+              gap: 0px;
+              outline: none;
+              appearance: none;
+              min-width: 182px;
+              background: no-repeat url("/wp-content/themes/kravt-food/src/svg/Arrow3.svg") 90% 50%;
+              background-color: transparent;
+
+              strong {
+                margin-right: 4px;
+                font-size: 24px;
+              }
+
             }
 
-            p {
+          }
+
+          &:nth-child(2) {
+            div:not(.select) {
+              margin-top: 40px;
               display: flex;
-              width: 100%;
-              justify-content: space-between;
-              align-items: center;
+              gap: 40px;
 
-              span {
-                border: 1px solid $grey-light;
-                border-radius: 8px;
-                padding: 23px 20px;
-                display: flex;
-                font-size: 14px;
-                cursor: pointer;
-                align-items: baseline;
-                gap: 0px;
+              input[type = 'radio'] {
+                appearance: none;
 
-                strong {
-                  margin-right: 4px;
-                  font-size: 24px;
+                &:before {
+                  content: attr(label);
+                  display: flex;
+                  color: $grey-middle;
                 }
 
-                svg {
-                  transform: rotate(180deg);
-                  margin-left: 32px;
-                  align-self: center;
+                &:checked:before {
+                  font-weight: 600;
+                  color: $black-middle;
                 }
+
               }
             }
-          }
-          &:nth-child(2) {
 
+          }
+
+          &:nth-child(3) {
+
+            div {
+              display: flex;
+              flex-direction: column;
+              gap: 20px;
+              margin-top: 40px;
+
+              p {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                color: $grey;
+
+                &:first-child {
+                  font-weight: 600;
+                  font-size: 24px;
+                  color: $black-middle;
+                }
+
+                &:last-child {
+                  font-size: 28px;
+
+                }
+
+                strong {
+                  font-size: 20px;
+                  color: $black-middle;
+                }
+
+                span {
+                  display: flex;
+                  flex-direction: column;
+                  font-size: 12px;
+                }
+              }
+
+              button {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                outline: none;
+                gap: 12px;
+                border: transparent;
+                padding: 18px 0;
+                text-transform: uppercase;
+                font-weight: 600;
+                font-size: 18px;
+                color: $white;
+                background: linear-gradient(0deg, #A9D953, #A9D953), #33D16D;
+                border-radius: 100px;
+              }
+            }
           }
         }
       }

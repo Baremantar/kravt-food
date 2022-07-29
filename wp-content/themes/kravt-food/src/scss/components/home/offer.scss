@@ -1,0 +1,108 @@
+.offer {
+  margin-top: 132px;
+  position: relative;
+
+  .wrapper {
+    background-color: $pink-light;
+    border-radius: 16px;
+    padding: 60px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+
+    .block {
+      display: flex;
+      padding: 32px;
+      border-radius: 12px;
+      background-color: $white;
+      max-width: 742px;
+      justify-content: space-between;
+
+      div {
+
+        &:nth-child(2) {
+          display: flex;
+          width: 1px;
+          height: 193px;
+          background-color: $grey-border;
+        }
+
+        &:last-child {
+          display: flex;
+          flex-direction: column;
+
+          p {
+            display: flex;
+            vertical-align: center;
+            justify-content: space-between;
+            color: $grey;
+            align-items: center;
+
+            span {
+              display: flex;
+              flex-direction: column;
+
+              strong {
+                font-size: 32px;
+                line-height: 130%;
+                color: $black-middle;
+              }
+            }
+          }
+
+          button {
+            margin-top: 24px;
+            background: linear-gradient(0deg, #A9D953, #A9D953), #33D16D;
+            border-radius: 100px;
+            outline: none;
+            border-color: transparent;
+            color: $white;
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 150%;
+            text-transform: uppercase;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            padding: 19px 53px;
+
+          }
+
+          p:last-child {
+            justify-content: start;
+            gap: 8px;
+            margin-top: 18px;
+            align-items: center;
+            font-size: 14px;
+
+            svg {
+              width: 24px;
+            }
+          }
+        }
+      }
+    }
+
+    .abs1 {
+      position: absolute;
+      right: -230px;
+      top: -50px;
+      object-fit: cover;
+      border-radius: 50%;
+      height: 850px;
+      width: 815px;
+    }
+
+  }
+
+  .abs2 {
+    position: absolute;
+    right: 418px;
+    top: -60px;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+}

@@ -1,4 +1,4 @@
-function select() {
+function location() {
     document.getElementsByClassName('current')[0].addEventListener('click', (event) => {
         if (event.target.classList.contains('current')) {
             event.target.children[1].classList.toggle('active');
@@ -7,4 +7,4 @@ function select() {
     });
 }
 
-export default select();
+export default location();
