@@ -16,6 +16,11 @@ get_header();
 	<?php include( get_stylesheet_directory() . '/components/home/menus.php' ) ?>
 	<?php include( get_stylesheet_directory() . '/components/home/offer.php' ) ?>
 	<?php include( get_stylesheet_directory() . '/components/home/specialists.php' ) ?>
+	<?php include( get_stylesheet_directory() . '/components/home/standarts.php' ) ?>
+	<?php include( get_stylesheet_directory() . '/components/home/personal_diet.php' ) ?>
+	<?php include( get_stylesheet_directory() . '/components/home/confidence.php' ) ?>
+	<?php include( get_stylesheet_directory() . '/components/home/faq.php' ) ?>
+	<?php include( get_stylesheet_directory() . '/components/home/uncertainty.php' ) ?>
 </main>
 <?php
 get_footer();

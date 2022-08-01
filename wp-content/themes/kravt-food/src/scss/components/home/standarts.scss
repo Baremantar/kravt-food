@@ -1,0 +1,61 @@
+.standarts {
+  margin-top: 160px;
+  padding-bottom: 241px;
+
+  .wrapper {
+    position: relative;
+    background: $mint;
+    border: 16px;
+    padding: 72px 60px 582px;
+
+    .head {
+      display: flex;
+      max-width: 965px;
+      flex-direction: column;
+
+      h2 {
+        &:nth-child(1) {
+          align-self: start;
+        }
+
+        &:nth-child(2) {
+          align-self: end;
+        }
+      }
+    }
+
+    .standart-points {
+      margin-top: 64px;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      column-gap: 24px;
+
+      div {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+
+        p {
+          font-weight: 500;
+          font-size: 24px;
+          line-height: 130%;
+        }
+      }
+    }
+
+    img {
+      &:nth-child(3) {
+        position: absolute;
+        right: 85px;
+        top: -67px;
+      }
+
+      &:nth-child(4) {
+        top: 544px;
+        left: 50%;
+        position: absolute;
+        transform: translateX(-50%);
+      }
+    }
+  }
+}

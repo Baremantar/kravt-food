@@ -52,7 +52,6 @@ $data = get_field( 'main-section_6' );
                         <span data-date="00.00">00.00</span>
                     </label>
                 </div>
-				<?php //} ?>
             </div>
             <div class="data-amount">
                 <span>

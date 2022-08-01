@@ -3,7 +3,9 @@ $data = get_field( 'main-section_8' );
 ?>
 
 <section class="container specialists">
-	<?= $data['head'] ?>
+    <div class="head">
+		<?= $data['head'] ?>
+    </div>
     <div class="splide peoples">
         <div class="splide__track">
             <div class="splide__arrows splide__arrows--ltr">

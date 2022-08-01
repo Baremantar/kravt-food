@@ -23,7 +23,6 @@ function slider() {
     mainSlider.on('active', () => {
         mainSlider.Components.Slides.get().forEach((elem) => {
             if (elem.slide.classList.contains('is-active') && !elem.slide.classList.contains('splide__slide--clone')) {
-                console.log(elem.index);
                 document.querySelectorAll('[data-slide]').forEach((element) => {
                     element.classList.remove('active')
                 })
@@ -55,6 +54,12 @@ function slider() {
     }).mount();
 
     new Splide('.peoples', {
+        type: 'slider',
+        pagination: false,
+        perPage: 1,
+    }).mount();
+
+    new Splide('.reviews', {
         type: 'slider',
         pagination: false,
         perPage: 1,
