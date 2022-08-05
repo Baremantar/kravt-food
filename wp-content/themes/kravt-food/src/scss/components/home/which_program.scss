@@ -1,0 +1,50 @@
+.which_program {
+  margin-top: 160px;
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    max-width: 1368px;
+    width: 100%;
+
+    h2 {
+      display: flex;
+      align-items: center;
+
+      &:first-child {
+        gap: 24px;
+
+        button {
+          max-height: 72px;
+          color: $white;
+          background: #A9D953;
+          border-radius: 100px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 12px;
+          font-size: 18px;
+          text-transform: uppercase;
+          border: transparent;
+          outline: none;
+          padding: 0px 61px;
+        }
+      }
+
+      &:nth-child(2) {
+        gap: 15px;
+        img{
+          margin-right: 26px;
+        }
+
+      }
+    }
+
+    p {
+      margin-top: 48px;
+      max-width: 509px;
+      font-size: 20px;
+      line-height: 140%;
+    }
+  }
+}

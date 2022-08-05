@@ -2,7 +2,7 @@
 $data = get_field( 'main-section_12' );
 ?>
 
-<section class="container faq">
+<section class="container-smaller faq">
     <div class="wrapper">
         <div>
             <div class="head"><?= $data['head'] ?></div>

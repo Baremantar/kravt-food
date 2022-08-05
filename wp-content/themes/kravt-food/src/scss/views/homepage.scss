@@ -4,30 +4,17 @@
   align-items: center;
 
   .container {
-    max-width: 1488px;
-    font-family: Commissioner;
-
-    h2, h3, h3 {
-      font-family: Euclid;
-      font-weight: 700;
-      text-transform: uppercase;
-      line-height: 130%;
-
-      em {
-        color: $green;
-      }
+              width: 100%;
+    & {
+      max-width: 1440px;
+      width: 100%;
     }
 
-    h2 {
-      font-size: 76px;
-    }
-
-    h3 {
-      font-size: 56px;
-      line-height: 70px;
-    }
-    h4 {
-      font-size: 48px;
+    &-smaller {
+      max-width: 1368px;
+      width: 100%;
     }
   }
+
+
 }

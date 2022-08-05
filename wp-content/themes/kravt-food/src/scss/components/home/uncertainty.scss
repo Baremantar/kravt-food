@@ -1,4 +1,59 @@
-.uncertainty{
+.uncertainty {
   margin-top: 100px;
+  padding-bottom: 90px;
 
+  .wrapper {
+    width: 100%;
+    background: $pink-light;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 64px;
+    position: relative;
+    border-radius: 12px;
+
+    div {
+      &:first-child {
+
+        p {
+          &:first-child {
+            font-weight: 600;
+            font-size: 32px;
+          }
+
+          &:last-child {
+            font-size: 20px;
+
+          }
+        }
+      }
+
+      &.manager {
+        display: flex;
+        gap: 36px;
+        align-items: center;
+
+        &-person {
+          img {
+            height: 112px;
+          }
+          display: flex;
+          gap: 24px;
+          align-items: center;
+          font-size: 14px;
+        }
+
+        &-link {
+          display: flex;
+          gap: 12px;
+        }
+      }
+    }
+
+    .abs {
+      position: absolute;
+      left: calc(50% - 228px/2 - 55px);
+      bottom: -96px;
+    }
+  }
 }

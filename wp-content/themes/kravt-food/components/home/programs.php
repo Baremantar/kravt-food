@@ -2,7 +2,7 @@
 $data = get_field( 'main-section_4' );
 ?>
 
-<section class="container programs">
+<section class="container-smaller programs">
 	<?= get_field( 'main-section_4' )['head'] ?>
     <div class="wrapper">
 		<?php foreach ( $data['cards'] as $item ) {

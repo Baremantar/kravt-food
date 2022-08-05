@@ -2,7 +2,7 @@
 $data = get_field( 'main-section_11' );
 ?>
 
-<section class="container confidence">
+<section class="container-smaller confidence">
     <div class="splide reviews">
         <div class="splide__track">
             <div class="splide__arrows splide__arrows--ltr">

@@ -21,6 +21,10 @@ get_header();
 	<?php include( get_stylesheet_directory() . '/components/home/confidence.php' ) ?>
 	<?php include( get_stylesheet_directory() . '/components/home/faq.php' ) ?>
 	<?php include( get_stylesheet_directory() . '/components/home/uncertainty.php' ) ?>
+	<?php include( get_stylesheet_directory() . '/components/home/delivery.php' ) ?>
+	<?php include( get_stylesheet_directory() . '/components/home/payments.php' ) ?>
+	<?php include( get_stylesheet_directory() . '/components/home/which_program.php' ) ?>
+  	<?php include( get_stylesheet_directory() . '/components/home/banner.php' ) ?>
 </main>
 <?php
 get_footer();
