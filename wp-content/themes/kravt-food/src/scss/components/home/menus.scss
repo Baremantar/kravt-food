@@ -7,15 +7,22 @@
   .head {
     display: flex;
     flex-direction: column;
-    max-width: 630px;
     width: 100%;
+    max-width: 634px;
+    gap: 3px;
 
     h3 {
       display: flex;
 
       &:first-child {
         align-self: start;
-        gap: 15px;
+        gap: 12px;
+
+        img {
+          position: relative;
+          bottom: 12px;
+          left: 4px;
+        }
       }
 
       &:last-child {
@@ -31,7 +38,7 @@
 
     .top {
       display: flex;
-      gap: 32px;
+      gap: 31px;
       align-items: center;
 
       .data-start {
@@ -39,9 +46,13 @@
         flex-direction: column;
         gap: 8px;
 
+        #data-start {
+          padding: 10px 20px;
+          gap: 19px;
+        }
+
         span {
-          &:first-child {
-          }
+          &:first-child {}
 
           &:last-child {
             display: flex;
@@ -63,7 +74,8 @@
           display: flex;
 
           label {
-            min-height: 83px;
+            text-transform: uppercase;
+            min-height: 81px;
             font-weight: 600;
             transition: border ease .3s;
             display: flex;
@@ -75,7 +87,7 @@
             border: 1px solid $grey-border;
             height: 100%;
             width: 100%;
-            padding: 16px;
+            padding: 16px 11px;
             cursor: pointer;
             border-radius: 8px;
             position: relative;
@@ -92,11 +104,11 @@
             height: 0;
           }
 
-          input[type="radio"]:active ~ label {
+          input[type="radio"]:active~label {
             opacity: 1;
           }
 
-          input[type="radio"]:checked ~ label {
+          input[type="radio"]:checked~label {
             opacity: 1;
             background-color: $green;
             color: $white;
@@ -108,7 +120,7 @@
 
       .data-amount {
         display: flex;
-        gap: 16px;
+        gap: 28px;
 
         span {
           font-size: 16px;
@@ -125,15 +137,15 @@
 
     .bottom {
       margin-top: 48px;
-      max-height: 454px;
 
       .menu {
         position: relative;
+        max-height: 446px;
 
         .splide {
           &__arrows {
             position: absolute;
-            top: -118px;
+            top: -109px;
             right: 0px;
             display: flex;
             gap: 24px;
@@ -153,7 +165,7 @@
           }
 
           &__list {
-            gap: 25px;
+            gap: 24px;
             display: flex;
           }
 
@@ -180,7 +192,7 @@
                 background-color: $white;
                 border: 1px solid $grey-border;
                 border-radius: 12px;
-                padding: 120px 20px 20px;
+                padding: 118px 20px 19px;
                 gap: 12px;
                 min-width: 324px;
                 margin-top: -115px;
@@ -208,8 +220,7 @@
                     background-color: $blue-lighter;
                   }
 
-                  &[data-text='Полдник'] {
-                  }
+                  &[data-text='Полдник'] {}
                 }
 
                 p {
@@ -230,6 +241,8 @@
                     font-size: 14px;
                     line-height: 150%;
                     color: $grey-middle;
+                    padding: 0;
+                    margin-top: 13px;
                   }
 
                   button {
@@ -239,7 +252,7 @@
                     font-size: 16px;
                     line-height: 140%;
                     color: $white;
-                    padding: 12px 24px;
+                    padding: 9.5px 19.5px;
                     border-color: transparent;
                     outline: none;
                   }

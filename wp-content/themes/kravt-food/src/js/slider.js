@@ -50,13 +50,15 @@ function slider() {
     new Splide('.menu', {
         type: 'slider',
         pagination: false,
-        perPage: 1,
+        perPage: 4,
+        perMove: 1,
     }).mount();
 
     new Splide('.peoples', {
         type: 'slider',
         pagination: false,
-        perPage: 1,
+        perPage: 4,
+        perMove: 1,
     }).mount();
 
     new Splide('.reviews', {

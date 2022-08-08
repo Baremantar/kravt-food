@@ -1,5 +1,5 @@
 .banner {
-  margin-top: 160px;
+  margin-top: 156px;
 
   .wrapper {
     display: flex;
@@ -12,36 +12,36 @@
       position: absolute;
       &:nth-child(1) {
         left: 0;
-        top: 24px;
+        top: 27px;
       }
       &:nth-child(2) {
         left: 119px;
-        bottom: 9px;
+        bottom: 15px;
       }
       &:nth-child(3) {
         left: 250px;
-        bottom: 207px;
+        bottom: 213px;
       }
       &:nth-child(4) {
         left: 348px;
-        top: 0;
+        top: 3px;
       }
       &:nth-child(5) {
-        left: 50%;
+        left: 49.2%;
         transform: translateX(-50%);
-        top: 44px;
+        top: 54px;
       }
       &:nth-child(6) {
         right: 298px;
-        bottom: 68px;
+        bottom: 74px;
       }
       &:nth-child(7) {
-        right: 213px;
-        top: 24px;
+        right: 197px;
+    top: 27px;
       }
       &:nth-child(8) {
         right: 0;
-        bottom: 33px;
+        bottom: 39px;
       }
     }
   }

@@ -4,7 +4,7 @@
   .wrapper {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 151px;
+    gap: 31px;
 
     div {
       &:first-child {
@@ -18,7 +18,18 @@
         }
 
         .switcher {
+          gap: 32px;
+          margin-top: 63px;
+
+
+
           .element {
+            display: flex;
+
+            &:last-child {
+              gap: 0px;
+            }
+
             label {
               transition: all ease .3s;
               display: flex;
@@ -27,7 +38,7 @@
               border: 1px solid $grey-middle-light;
               height: 100%;
               width: 100%;
-              padding: 20px;
+              padding: 11px 20px 11px 31px;
               cursor: pointer;
               border-radius: 32px;
               position: relative;
@@ -51,11 +62,11 @@
               height: 0;
             }
 
-            input[type="radio"]:active ~ label {
+            input[type="radio"]:active~label {
               opacity: 1;
             }
 
-            input[type="radio"]:checked ~ label {
+            input[type="radio"]:checked~label {
               opacity: 1;
               border: 1px solid $green;
 
@@ -80,7 +91,7 @@
           background: $white;
           border: 1px solid $grey-light;
           border-radius: 12px;
-          padding: 24px;
+          padding: 20px 24px;
           overflow: hidden;
           height: 110px;
           transition: all ease .3s;
@@ -92,7 +103,7 @@
             span {
               &:nth-child(2) {
                 font-size: 14px;
-                margin-top: 20px;
+                margin-top: 22px;
                 color: $grey-middle;
               }
             }
@@ -108,10 +119,12 @@
             &:nth-child(1) {
               font-weight: 600;
               font-size: 24px;
+              line-height: 130%;
             }
 
             &:nth-child(4) {
               margin-top: 20px;
+              line-height: 138%;
             }
           }
 
@@ -129,12 +142,16 @@
             gap: 12px;
             align-items: center;
 
+            img {
+              max-height: 55px;
+            }
+
             p {
               font-weight: 500;
 
               span {
-                margin-top: 8px;
-                font-size: 12px;
+                margin-top: 8px !important;
+                font-size: 12px !important;
                 color: $grey;
               }
             }
@@ -147,9 +164,10 @@
             width: 20px;
             height: 20px;
             position: absolute;
-            transition: all .3s ease  ;
 
-            &:before, &:after {
+            &:before,
+            &:after {
+              transition: .3s all ease;
               content: '';
               background: linear-gradient(0deg, #A9D953, #A9D953), #33D16D;
               position: absolute;

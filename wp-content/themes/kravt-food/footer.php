@@ -3,7 +3,7 @@
         <div class="top">
             <div class="block">
                 <a href="/" class="logo">
-					<?= file_get_contents( get_field( 'site_logo', 'options' )['url'] ) ?>
+					<?= file_get_contents( get_template_directory().'/src/svg/logo-footer.svg') ?>
                 </a>
                 <div>
                     <a href="<?= get_field( 'site_phone', 'options' ) ?>"
@@ -57,12 +57,33 @@
             </div>
             <div class="block">
                 <button><?= file_get_contents( get_template_directory() . '/src/svg/Arrow2.svg' ) ?>
-                    </br>подобрать рацион
+                    подобрать</br>рацион
                 </button>
             </div>
         </div>
-        <div class="middle"></div>
-        <div class="bottom"></div>
+        <div class="middle">
+            <div class="block">
+                <a href="">Реквизиты</a>
+                <a href="">Политика конфиденциальности</a>
+            </div>
+            <div class="block">
+                <span>Мы в социальных сетях:</span>
+                <div class="social">
+                    <a href=""><?= file_get_contents( get_template_directory() . '/src/svg/instagram.svg' ) ?></a>
+                    <a href=""><?= file_get_contents( get_template_directory() . '/src/svg/telegram.svg' ) ?></a>
+                    <a href=""><?= file_get_contents( get_template_directory() . '/src/svg/vkontakte.svg' ) ?></a>
+                    <a href=""><?= file_get_contents( get_template_directory() . '/src/svg/whatsapp.svg' ) ?></a>
+                    <a href=""><?= file_get_contents( get_template_directory() . '/src/svg/facebook.svg' ) ?></a>
+                </div>
+            </div>
+        </div>
+        <div class="bottom">
+            <span>© 2022 KravtFood — здоровое питание с доставкой</span>
+            <div class="block">
+                <span>Дизайн и разработка</span>
+				<?= file_get_contents( get_template_directory() . '/src/svg/affarts-logo.svg' ) ?>
+            </div>
+        </div>
     </div>
 </footer>
 <?php wp_footer(); ?>

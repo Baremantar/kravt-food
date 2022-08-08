@@ -12,14 +12,16 @@ html {
 
 }
 
-h2, h3, h3 {
+h1, h2, h3 {
   font-family: Euclid;
   font-weight: 700;
   text-transform: uppercase;
   line-height: 130%;
 
-  em {
-    color: $green;
+  &:not(h1) {
+    em {
+      color: $green;
+    }
   }
 }
 
@@ -31,6 +33,11 @@ h3 {
   font-size: 56px;
   line-height: 70px;
 }
+
 h4 {
   font-size: 48px;
+}
+
+button{
+  font-family: Euclid !important;
 }

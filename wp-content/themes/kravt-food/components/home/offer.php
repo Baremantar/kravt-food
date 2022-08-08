@@ -12,12 +12,13 @@ $data = get_field( 'main-section_7' );
             <div></div>
             <div>
                 <p>
-                    Итого за 5 дней:
-                    <span>5200 ₽/день
-                                <strong>
-                                    26 000 ₽
-                                </strong>
-                            </span>
+                    <span>Итого за 5 дней:</span>
+                    <span>
+                        5200 ₽/день
+                        <strong>
+                            26 000 ₽
+                        </strong>
+                    </span>
                 </p>
                 <button>
                     Оформить заказ

@@ -1,59 +1,83 @@
 .offer {
-  margin-top: 132px;
+  margin-top: 133px;
   position: relative;
 
   .wrapper {
     background-color: $pink-light;
     border-radius: 16px;
-    padding: 60px;
+    padding: 50.5px 60px 61px;
     display: flex;
     flex-direction: column;
     width: 100%;
     position: relative;
     overflow: hidden;
 
+    h4 {
+      text-transform: uppercase;
+      margin-top: 10px;
+      line-height: 130%;
+      font-family: 'Euclid';
+      text-transform: uppercase;
+    }
+
     .block {
       display: flex;
-      padding: 32px;
+      padding: 32px 32px 20px;
       border-radius: 12px;
       background-color: $white;
+      margin-top: 35px;
       max-width: 742px;
       justify-content: space-between;
 
       div {
+
+        &:nth-child(1) {
+          img {
+            margin-top: 20px;
+          }
+        }
 
         &:nth-child(2) {
           display: flex;
           width: 1px;
           height: 193px;
           background-color: $grey-border;
+          margin-left: 6px;
         }
 
         &:last-child {
           display: flex;
           flex-direction: column;
 
-          p {
+          P {
             display: flex;
-            vertical-align: center;
             justify-content: space-between;
-            color: $grey;
             align-items: center;
 
             span {
-              display: flex;
-              flex-direction: column;
+              &:first-child {
+                color: $grey;
+                margin-top: 21px;
+              }
 
-              strong {
-                font-size: 32px;
-                line-height: 130%;
-                color: $black-middle;
+              &:last-child {
+                display: flex;
+                flex-direction: column;
+                text-align: end;
+                letter-spacing: -1.1px;
+
+                strong {
+                  letter-spacing: 0px;
+                  font-size: 32px;
+                  line-height: 130%;
+                  color: $black-middle;
+                }
               }
             }
           }
 
           button {
-            margin-top: 24px;
+            margin-top: 23px;
             background: linear-gradient(0deg, #A9D953, #A9D953), #33D16D;
             border-radius: 100px;
             outline: none;
@@ -67,14 +91,15 @@
             align-items: center;
             justify-content: center;
             gap: 12px;
-            padding: 19px 53px;
+            padding: 14px 50px;
+
 
           }
 
           p:last-child {
-            justify-content: start;
+            justify-content: center;
             gap: 8px;
-            margin-top: 18px;
+            margin-top: 4px;
             align-items: center;
             font-size: 14px;
 
@@ -88,20 +113,21 @@
 
     .abs1 {
       position: absolute;
-      right: -230px;
-      top: -50px;
+      right: -114px;
+      top: -90px;
+      -o-object-fit: cover;
       object-fit: cover;
       border-radius: 50%;
-      height: 850px;
-      width: 815px;
+      height: 730px;
+      width: 730px;
     }
 
   }
 
   .abs2 {
     position: absolute;
-    right: 418px;
-    top: -60px;
+    right: 472px;
+    top: -49px;
     object-fit: cover;
     border-radius: 50%;
   }

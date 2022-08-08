@@ -1,7 +1,7 @@
 header {
   width: 100%;
   min-height: 80px;
-  max-width: 1368px;
+  max-width: 1369px;
   display: flex;
   align-items: center;
   font-size: 16px;
@@ -23,13 +23,18 @@ header {
       display: flex;
       width: 100%;
       height: 100%;
-      justify-content: space-between;
+      //justify-content: space-between;
       align-items: center;
     }
-
+    &-logo {
+      svg {
+        margin-top: 5px;
+      }
+    }
     &-city {
+      margin-left: 31px;
       position: relative;
-      min-width: 160px;
+      min-width: 187px;
 
       .current {
         cursor: pointer;
@@ -44,7 +49,7 @@ header {
 
           &:last-child {
             transition: all ease .3s;
-            margin-left: 16px;
+            margin-left: auto;
             transform: rotate(180deg);
 
             &.active {
@@ -55,6 +60,7 @@ header {
       }
 
       .hidden {
+        width: 100%;
         font-weight: 400;
         overflow: hidden;
         display: flex;
@@ -95,17 +101,19 @@ header {
     }
 
     &-nav {
+      margin-left: 39px;
       ul {
         display: flex;
-        gap: 25px;
+        gap: 24.2px;
       }
     }
 
     &-phone {
-
+      margin-left: 33.3px;
     }
 
     &-button {
+      margin-left: 24px;
       min-width: 175px;
       min-height: 48px;
       background: transparent;

@@ -1,5 +1,6 @@
 .which_program {
   margin-top: 160px;
+
   .wrapper {
     display: flex;
     flex-direction: column;
@@ -12,7 +13,7 @@
       align-items: center;
 
       &:first-child {
-        gap: 24px;
+        gap: 29px;
 
         button {
           max-height: 72px;
@@ -27,14 +28,16 @@
           text-transform: uppercase;
           border: transparent;
           outline: none;
-          padding: 0px 61px;
+          padding: 0 58.5px;
         }
       }
 
       &:nth-child(2) {
         gap: 15px;
-        img{
-          margin-right: 26px;
+        margin-top: 5px;
+
+        img {
+          margin-right: 21px;
         }
 
       }

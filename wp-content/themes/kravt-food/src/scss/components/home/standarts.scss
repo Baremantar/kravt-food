@@ -1,5 +1,5 @@
 .standarts {
-  margin-top: 160px;
+  margin-top: 158px;
   padding-bottom: 241px;
 
   .wrapper {
@@ -11,6 +11,7 @@
     .head {
       display: flex;
       max-width: 965px;
+      gap: 5px;
       flex-direction: column;
 
       h2 {

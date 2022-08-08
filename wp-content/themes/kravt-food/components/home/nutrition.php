@@ -83,7 +83,7 @@
                     </select>
                 </div>
                 <div>
-                    <input type="radio" name="date" label="Дни программы">
+                    <input type="radio" name="date" label="Дни программы" checked>
                     <input type="radio" name="date" label="Календарь">
                 </div>
             </div>
@@ -92,7 +92,7 @@
                 <div>
                     <p>Сбалансированное питание</p>
                     <p>Калорийность: <strong>1800 ккал</strong></p>
-                    <p>Продолжительность: <span><strong>1800 ккал</strong>5200 ₽/день</span></p>
+                    <p>Продолжительность: <span><strong>5 дней</strong>5200 ₽/день</span></p>
                     <p>Итого за 5 дней: <strong>26 000 ₽</strong></p>
                     <button>
                         оформить заказ

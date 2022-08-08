@@ -1,6 +1,7 @@
 .uncertainty {
   margin-top: 100px;
   padding-bottom: 90px;
+  margin-left: 7px;
 
   .wrapper {
     width: 100%;
@@ -23,7 +24,7 @@
 
           &:last-child {
             font-size: 20px;
-
+            margin-top: 18px;
           }
         }
       }
@@ -35,25 +36,35 @@
 
         &-person {
           img {
+            right: 2px;
             height: 112px;
+            position: relative;
           }
+
           display: flex;
           gap: 24px;
           align-items: center;
-          font-size: 14px;
+
+          p {
+            position: relative;
+            font-size: 14px !important;
+            bottom: 8px;
+          }
         }
 
         &-link {
           display: flex;
           gap: 12px;
+          margin-right: 3px;
+          margin-top: 7px;
         }
       }
     }
 
     .abs {
       position: absolute;
-      left: calc(50% - 228px/2 - 55px);
-      bottom: -96px;
+      left: calc(50% - 117px - 55px);
+      bottom: -97px;
     }
   }
 }

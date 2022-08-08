@@ -1,7 +1,7 @@
 .slider {
   position: relative;
-  padding: 0 25px;
-  padding-bottom: 100px;
+  padding: 0 25px 100px;
+  margin-top: 4px;
 
   .background {
     position: absolute;
@@ -16,7 +16,7 @@
       &__track {
         overflow: hidden;
         position: relative;
-        max-width: 1440px;
+        max-width: 1488px;
         max-height: 775px;
       }
 
@@ -27,7 +27,7 @@
       }
 
       &__slide {
-        min-width: 1440px;
+        min-width: 1488px;
         height: 100%;
 
         img {
@@ -56,14 +56,15 @@
       &__pagination {
         display: flex;
         position: absolute;
-        bottom: 10px;
+        bottom: 35px;
         left: 0;
+        max-width: 1467px;
         width: 100%;
         justify-content: space-between;
-        padding: 0 10px;
+        padding: 0 60px;
 
         button {
-          padding: 13px 16px;
+          padding: 11px 13px;
           font-size: 16px;
           color: $white;
           background: $slider-pag;
@@ -109,19 +110,20 @@
     display: flex;
     flex-direction: column;
 
-    max-width: 1440px;
+    max-width: 1488px;
 
     h1 {
       position: absolute;
       opacity: 0;
       z-index: -5;
       line-height: 110px;
-      top: 66px;
-      left: 60px;
+      top: 60px;
+      left: 35px;
       text-transform: uppercase;
       transition: opacity ease-in-out .3s;
 
       p {
+        letter-spacing: -0.9px;
         font-weight: 700;
         font-size: 96px;
         margin: 0;
@@ -135,16 +137,16 @@
     }
 
     p {
-      margin-top: 300px;
-      margin-left: 60px;
+      margin-top: 296px;
+      margin-left: 35px;
       font-weight: 400;
       font-size: 28px;
     }
 
     .mini-slider {
       position: relative;
-      margin-left: 60px;
-      margin-top: 20px;
+      margin-left: 35px;
+      margin-top: 14px;
       overflow: hidden;
       min-height: 270px;
       max-width: 576px;
@@ -188,11 +190,12 @@
           h4 {
             font-weight: 600;
             font-size: 24px;
+            margin-left: 9px;
           }
 
           p {
-            margin-top: 6px;
-            margin-left: 0px;
+            margin-top: 4px;
+            margin-left: 8px;
             font-weight: 400;
             font-size: 16px;
             max-width: 260px;
@@ -214,13 +217,13 @@
         &__pagination {
           position: absolute;
           display: flex;
-          bottom: 20px;
-          left: 37%;
+          bottom: 22px;
+          left: 32.4%;
           transform: translateX(-50%);
           gap: 12px;
 
           button {
-            height: 12px;
+            height: 8px;
             width: 8px;
             border-radius: 50%;
             border: none;
@@ -242,19 +245,26 @@
       border: transparent;
       justify-content: center;
       align-items: center;
-      line-height: 23px;
+      line-height: 150%;
       height: 240px;
       width: 240px;
       border-radius: 50%;
+      padding-bottom: 19px;
+      letter-spacing: -1.1px;
       background: linear-gradient(0deg, #A9D953, #A9D953), #33D16D;
       outline: none;
       top: 370px;
-      right: 490px;
+      right: 467px;
       font-weight: 600;
       font-size: 24px;
       text-transform: uppercase;
       position: absolute;
       text-align: center;
+
+      svg {
+        position: absolute;
+        top: 43px;
+      }
     }
   }
 }

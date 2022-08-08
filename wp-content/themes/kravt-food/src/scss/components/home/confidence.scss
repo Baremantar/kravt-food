@@ -3,19 +3,19 @@
 
   .splide {
     &__list {
-      display: flex;  
+      display: flex;
     }
 
     &__track {
       display: flex;
       flex-direction: column;
-      gap: 32px;
+      gap: 26px;
     }
 
     &__slide {
       display: grid;
-      grid-template-areas: 'a b' 'a c';
-      grid-template-columns: 1.5fr 1fr;
+      grid-template-areas: 'a b''a c';
+      grid-template-columns: 788px 1fr;
       gap: 24px;
 
       .grid-item {
@@ -59,7 +59,7 @@
 
             a {
               position: absolute;
-              top: 24px;
+              top: 23px;
               right: 16px;
             }
 
@@ -77,6 +77,7 @@
 
               div {
                 border-radius: 10px;
+
                 &:nth-child(1) {
                   display: flex;
                   flex-direction: column;
@@ -93,14 +94,14 @@
 
                     &:nth-child(2) {
                       color: $grey;
-                      margin-top: 10px;
-                      margin-bottom: 12px;
+                      margin-top: 8px;
+                      margin-bottom: 10px;
                     }
 
                     &:nth-child(6) {
                       align-self: flex-end;
                       font-weight: 600;
-                      margin-top: 12px;
+                      margin-top: 9px;
                       cursor: pointer;
                     }
                   }
@@ -142,6 +143,11 @@
           .card {
             min-height: 370px;
 
+            a {
+              top: 24px;
+              right: 24px;
+            }
+
             div {
               span {
                 &:nth-child(4) {
@@ -159,31 +165,38 @@
           .card {
             display: flex;
             flex-direction: column;
-            padding: 30px;
+            padding: 39px 23px;
             border: 1px solid $orange;
             border-radius: 12px;
             gap: 10px;
 
             .top {
               display: flex;
-              gap: 16px;
+              gap: 28px;
               align-items: center;
 
               .image {
                 position: relative;
 
-                svg {
+                img {
+                  position: relative;
+                  bottom: 10px;
+                  left: 6px;
+                }
+
+                a {
                   position: absolute;
-                  bottom: -6px;
+                  bottom: -8px;
                   z-index: 1;
-                  right: -3px;
+                  right: -15px;
                 }
               }
 
               .head {
                 display: flex;
                 flex-direction: column;
-                gap: 10px;
+                gap: 6px;
+                margin-bottom: 22px;
 
                 span {
                   &:first-child {
@@ -197,6 +210,12 @@
                 }
               }
 
+            }
+            .bottom {
+              p {
+                line-height: 22px;
+              }
+              
             }
           }
         }

@@ -3,18 +3,25 @@
   border-radius: 16px;
   padding: 72px 60px 37px 60px;
   justify-content: space-between;
-  gap: 24px;
+  gap: 12px;
   display: grid;
-  grid-template-areas: 'a b' 'c c';
+  grid-template-areas: 'a b''c c';
   align-items: start;
 
+  p {
+    line-height: 140%;
+  }
+
+  h3 {
+    line-height: 130%;
+  }
 
   input:before {
     transition: border ease .3s;
   }
 
   form {
-    margin-top: 28px;
+    margin-top: 27px;
     font-size: 16px;
     max-width: 904px;
 
@@ -29,7 +36,7 @@
       label {
         align-items: center;
         display: flex;
-        gap: 12px;
+        gap: 8px;
 
         input {
           width: 19px;
@@ -46,8 +53,8 @@
       flex-direction: row;
 
       &.global {
-        margin-top: 28px;
-        padding: 24px;
+        margin-top: 25px;
+        padding: 24px 24px 27px;
         background: $white;
         border-radius: 12px;
         flex-direction: column;
@@ -62,12 +69,12 @@
 
           label {
             font-weight: 500;
-            margin-bottom: 12px;
+            margin-bottom: 11px;
           }
 
           div {
             display: flex;
-            gap: 16px;
+            gap: 15px;
           }
 
           &:last-child {
@@ -80,12 +87,12 @@
             }
           }
 
-          input[type = 'radio'] {
+          input[type='radio'] {
             appearance: none;
 
             &:before {
               content: attr(label);
-              padding: 13px 30px;
+              padding: 10.8px 30px;
               border: 1px solid $grey-light;
               border-radius: 8px;
               text-align: center;
@@ -93,12 +100,20 @@
               display: flex;
             }
 
+            &:last-child {
+              &:before {
+                padding: 10.8px 28px;
+
+              }
+            }
+
             &:checked:before {
               border: 1px solid $green;
             }
+
           }
 
-          input[type = "number"] {
+          input[type="number"] {
             display: flex;
             position: relative;
             max-width: 120px;
@@ -139,7 +154,7 @@
 
         label {
           font-weight: 500;
-          margin-bottom: 12px;
+          margin-bottom: 10px;
         }
 
         .wrapper-item {
@@ -149,21 +164,19 @@
           label {
             display: flex;
             align-items: center;
-            gap: 10px;
-            padding-right: 10px;
+            padding-right: 20px;
             margin-bottom: 0;
             font-weight: 400;
-
           }
 
-          input[type = 'radio'] {
+          input[type='radio'] {
             appearance: none;
 
             &:before {
               content: attr(label);
-              padding: 13px 0px 13px 20px;
+              padding: 19px 8px 19px 19px;
               width: calc(100% + 60px);
-              border: 1px solid $grey-light;
+              border: 1px solid #e1e2e1;
               border-radius: 8px;
               text-align: center;
               font-size: 16px;
@@ -181,8 +194,7 @@
       &.activity {
         flex-direction: column;
         margin-top: 48px;
-        gap: 12px;
-
+        gap: 11px;
         label {
           font-weight: 500;
         }
@@ -193,6 +205,8 @@
           gap: 16px;
 
           div {
+            display: flex;
+
             label {
               transition: border ease .3s;
               display: block;
@@ -216,7 +230,8 @@
                 font-weight: 400;
                 margin-top: 10px;
                 font-size: 14px;
-                color: $grey-middle;;
+                color: $grey-middle;
+                ;
               }
             }
 
@@ -226,11 +241,11 @@
               height: 0;
             }
 
-            input[type="radio"]:active ~ label {
+            input[type="radio"]:active~label {
               opacity: 1;
             }
 
-            input[type="radio"]:checked ~ label {
+            input[type="radio"]:checked~label {
               opacity: 1;
               border: 1px solid $green;
             }
@@ -250,14 +265,16 @@
     max-width: 440px;
 
     p {
+      margin-top: 7px;
       font-size: 20px;
     }
 
     .manager {
       display: flex;
       align-items: center;
-      gap: 46px;
-      margin-top: 60px;
+      justify-content: space-between;
+      margin-top: 59px;
+      margin-left: 3px;
 
       div {
         display: flex;
@@ -270,25 +287,29 @@
 
       &-link {
         gap: 12px;
+        margin-top: 6px;
+        margin-right: 1px;
       }
 
       p {
         font-size: 14px;
         color: $grey;
+        margin-top: 0px;
       }
     }
 
     .calculated {
-      margin-top: 17px;
+      margin-top: 20px;
       border-radius: 12px;
       background-color: $white;
-      padding: 40px;
+      padding: 33px 40px 40px;
       display: flex;
       flex-direction: column;
 
       p {
         font-size: 16px;
         color: $grey;
+        
       }
 
       &-recommendation {
@@ -300,9 +321,10 @@
           margin-top: 16px;
           font-size: 32px;
           font-weight: 700;
-          padding-bottom: 24px;
+          padding-bottom: 19px;
           border-bottom: 1px solid $grey-light;
           color: $green;
+          font-family: Euclid;
           display: flex;
           width: 100%;
         }
@@ -311,6 +333,8 @@
           font-weight: 700;
           font-size: 32px;
           margin-top: 16px;
+          font-family: Euclid;
+          line-height: 140%;
         }
 
         &-recommendation {
@@ -338,7 +362,7 @@
           color: $white;
           text-transform: uppercase;
           font-weight: 600;
-          margin-top: 27px;
+          margin-top: 23px;
         }
       }
     }
