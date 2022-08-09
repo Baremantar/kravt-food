@@ -53,15 +53,15 @@ $data = get_field( 'main-section_6' );
                     </label>
                 </div>
                 <div>
-                    <input type="radio" id="day_4" name="day">
-                    <label for="day_4">
+                    <input type="radio" id="day_5" name="day">
+                    <label for="day_5">
                         Сб
                         <span data-date="00.00">00.00</span>
                     </label>
                 </div>
                 <div>
-                    <input type="radio" id="day_4" name="day">
-                    <label for="day_4">
+                    <input type="radio" id="day_6" name="day">
+                    <label for="day_6">
                         Вс
                         <span data-date="00.00">00.00</span>
                     </label>

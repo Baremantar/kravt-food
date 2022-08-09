@@ -22,11 +22,14 @@
         flex-direction: column;
         gap: 26px;
         max-width: 556px;
+        padding-right: 50px;
 
         hr {
+          position: relative;
           height: 1px;
           width: 100%;
           margin: 0;
+          width: 556px;
         }
 
         .block {
@@ -57,7 +60,10 @@
             }
           }
           &:last-child{
-            gap: 48px;
+            gap: 42px;
+            svg {
+              margin-top: 5px;
+            }
             div {
               margin-top: 6px;
             }

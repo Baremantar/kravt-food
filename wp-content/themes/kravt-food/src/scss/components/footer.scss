@@ -53,6 +53,7 @@ footer {
           text-transform: uppercase;
           text-align: center;
           color: $white;
+
           svg {
             top: 46px;
             transform: scale(1.2);
@@ -82,9 +83,10 @@ footer {
         }
 
         &:nth-child(2) {
-          margin-right:132px;
-          
+          margin-right: 132px;
+
         }
+
         &:nth-child(4) {
           margin-left: auto;
         }
@@ -93,7 +95,7 @@ footer {
 
     .middle {
       margin-top: 36px;
-      padding: 40px 0 32px;
+      padding: 38px 0 32px;
       display: flex;
       border-top: 1px solid #EBECEB;
       border-bottom: 1px solid #EBECEB;
@@ -107,6 +109,8 @@ footer {
 
         a {
           color: $grey-middle;
+          position: relative;
+    bottom: 2px;
         }
 
         &:first-child {
@@ -115,33 +119,39 @@ footer {
 
         &:last-child {
           gap: 24px;
+          font-size: 18px;
         }
 
         .social {
-          font-size: 18px;
           display: flex;
           align-items: center;
           gap: 12px;
+
+          a {
+            position: relative;
+            top: 2px;
+            top: none;
+          }
         }
       }
     }
+  }
 
-    .bottom {
-      font-size: 16px;
+  .bottom {
+    font-size: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 41px;
+
+    span {
+      color: $grey-middle;
+    }
+
+    .block {
       display: flex;
-      justify-content: space-between;
       align-items: center;
-      margin-top: 41px;
-
-      span {
-        color: $grey-middle;
-      }
-
-      .block {
-        display: flex;
-        align-items: center;
-        gap: 12px;
-      }
+      gap: 12px;
     }
   }
 }

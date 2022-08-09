@@ -28,32 +28,31 @@
                             <a href="">Детское питание</a>
                         </li>
                         <li>
-                            <a href="">Сбалансированное питание</a>
+                            <a href="">Индивидуальное меню</a>
                         </li>
                     </ul>
                 </nav>
             </div>
             <div class="block">
-				<?php
-				wp_nav_menu( [
-					'theme_location'  => '',
-					'menu'            => 'menu-header',
-					'container'       => 'nav',
-					'container_class' => 'footer-nav',
-					'container_id'    => '',
-					'menu_class'      => '',
-					'menu_id'         => '',
-					'echo'            => true,
-					'fallback_cb'     => 'wp_page_menu',
-					'before'          => '',
-					'after'           => '',
-					'link_before'     => '',
-					'link_after'      => '',
-					'items_wrap'      => '<ul id="%1$s" class="%2$s">%3$s</ul>',
-					'depth'           => 0,
-					'walker'          => '',
-				] );
-				?>
+            <nav class="footer-nav">
+                    <ul>
+                        <li>
+                            <a href="">О компании</a>
+                        </li>
+                        <li>
+                            <a href="">Как это работает</a>
+                        </li>
+                        <li>
+                            <a href="">Доставка</a>
+                        </li>
+                        <li>
+                            <a href="">Отзывы</a>
+                        </li>
+                        <li>
+                            <a href="">Блог</a>
+                        </li>
+                    </ul>
+                </nav>
             </div>
             <div class="block">
                 <button><?= file_get_contents( get_template_directory() . '/src/svg/Arrow2.svg' ) ?>

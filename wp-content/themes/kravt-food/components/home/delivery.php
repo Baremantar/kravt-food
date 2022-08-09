@@ -42,12 +42,7 @@ $data = get_field( 'main-section_13' );
                         Местоположение
                         <?= file_get_contents(get_template_directory().'/src/svg/arrow3.svg') ?>
                     </span>
-
-                    <!--<select id="mySelect">-->
-                    <!--                        <option value>Select...</option>-->
-                    <!--                        <option value="foo">Foo</option>-->
-                    <!--                        <option value="buz">Buz</option>-->
-                    <!--                    </select>-->
+                    
                 </div>
             </div>
         </div>

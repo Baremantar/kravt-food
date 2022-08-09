@@ -8,33 +8,33 @@
     left: 50%;
     transform: translateX(-50%);
     top: 0;
+    overflow: hidden;
+    max-width: 1488px;
+    border-radius: 15px;
+
 
     .splide {
       max-width: 100%;
       position: absolute;
 
       &__track {
-        overflow: hidden;
         position: relative;
-        max-width: 1488px;
         max-height: 775px;
       }
 
       &__list {
         width: 100%;
         display: flex;
-        gap: 2px;
       }
 
       &__slide {
-        min-width: 1488px;
         height: 100%;
 
         img {
           display: flex;
+          min-width: 1488px;
           width: 100%;
           height: 100%;
-          border-radius: 15px;
         }
       }
 
@@ -173,8 +173,7 @@
 
         }
 
-        &__list {
-        }
+        &__list {}
 
         &__slide {
           min-height: 270px;

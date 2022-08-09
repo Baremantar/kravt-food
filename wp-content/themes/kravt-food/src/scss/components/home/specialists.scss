@@ -62,28 +62,42 @@
       }
 
       &__slide {
+
         margin-left: -34px;
 
+        &#splide04-clone09 {
+          z-index: 9 !important;
+        }
 
-        &:nth-child(2) {
+        &#splide04-clone10 {
+          z-index: 10 !important;
+        }
+
+        &#splide04-slide02,
+        &#splide04-clone02,
+        &#splide04-clone10 {
           .text {
             border: 2px solid #FF7D46;
           }
         }
 
-        &:nth-child(4) {
+        &#splide04-slide04,
+        &#splide04-clone04,
+        &#splide04-clone12 {
           .text {
             border: 2px solid rgba(51, 209, 109, 1);
           }
         }
 
-        &:nth-child(6) {
+        &#splide04-slide06,
+        &#splide04-clone06 {
           .text {
             border: 2px solid rgba(82, 183, 255, 1);
           }
         }
 
-        &:nth-child(8) {
+        &#splide04-slide08,
+        &#splide04-clone08 {
           .text {
             border: 2px solid rgba(169, 217, 83, 1);
           }

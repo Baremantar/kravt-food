@@ -1,0 +1,96 @@
+.support {
+    top: 757px;
+    position: fixed;
+    left: 92px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .back {
+        cursor: pointer;
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 60px;
+        width: 60px;
+        background-color: $green-accent;
+        border-radius: 50%;
+        z-index: -1;
+
+        span {
+            position: relative;
+            display: flex;
+            width: 44px;
+            height: 44px;
+            justify-content: center;
+            align-items: center;
+            background-color: $green;
+            border-radius: 50%;
+            z-index: 1;
+
+            svg {
+                transition: all .3s ease;
+                position: absolute;
+
+                &:first-child {
+                    opacity: 1;
+                    overflow: visible;
+                }
+
+                &:last-child {
+                    opacity: 0;
+                    overflow: hidden;
+                }
+            }
+        }
+    }
+
+    .social {
+
+        a {
+            position: relative;
+            z-index: -10;
+            pointer-events: none;
+        }
+
+        gap: 12px;
+        transition: all .3s ease;
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        opacity: 0;
+        overflow: hidden;
+        bottom: 25px;
+    }
+
+    &.active {
+        .back {
+            span {
+                svg {
+                    &:first-child {
+                        opacity: 0;
+                        overflow: hidden;
+                    }
+
+                    &:last-child {
+                        opacity: 1;
+                        overflow: visible;
+                    }
+                }
+            }
+        }
+
+        .social {
+            a {
+                z-index: 0;
+                position: relative;
+                pointer-events: visible;
+            }
+
+            opacity: 1;
+            overflow: visible;
+            bottom: 42px;
+        }
+    }
+}

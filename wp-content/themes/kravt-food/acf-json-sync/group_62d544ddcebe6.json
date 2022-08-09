@@ -615,6 +615,25 @@
                             "max_height": "",
                             "max_size": "",
                             "mime_types": ""
+                        },
+                        {
+                            "key": "field_62f18d2836a75",
+                            "label": "Кол-во программ",
+                            "name": "count",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
                         }
                     ]
                 }
@@ -2005,5 +2024,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1659529612
+    "modified": 1659997503
 }

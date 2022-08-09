@@ -25,6 +25,7 @@ get_header();
 	<?php include( get_stylesheet_directory() . '/components/home/payments.php' ) ?>
 	<?php include( get_stylesheet_directory() . '/components/home/which_program.php' ) ?>
   	<?php include( get_stylesheet_directory() . '/components/home/banner.php' ) ?>
+  	<?php include( get_stylesheet_directory() . '/components/support.php' ) ?>
 </main>
 <?php
 get_footer();

@@ -55,7 +55,7 @@ function slider() {
     }).mount();
 
     new Splide('.peoples', {
-        type: 'slider',
+        type: 'loop',
         pagination: false,
         perPage: 4,
         perMove: 1,
@@ -64,6 +64,7 @@ function slider() {
     new Splide('.reviews', {
         type: 'slider',
         pagination: false,
+        perMove: 1,
         perPage: 1,
     }).mount();
 

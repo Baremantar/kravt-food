@@ -19,7 +19,7 @@ $data = get_field( 'main-section_4' );
 						<?php
 					} ?>
                 </div>
-                <button>6 программ</button>
+                <button><?= $item['count']?> программ</button>
             </div>
 		<?php } ?>
     </div>
