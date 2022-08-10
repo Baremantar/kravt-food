@@ -17,7 +17,7 @@ $data = get_field( 'main-section_7' );
                         5200 ₽/день
                         <strong>
                             26 000 ₽
-                        </strong>
+                        </strong>   
                     </span>
                 </p>
                 <button>

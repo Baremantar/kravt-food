@@ -10,6 +10,7 @@
   "author": "baremantar",
   "license": "ISC",
   "devDependencies": {
+    "custom-select": "^1.1.15",
     "del": "^6.0.0",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^8.0.0",
@@ -24,13 +25,13 @@
     "gulp-sass-bulk-import": "^1.0.1",
     "gulp-ttf2woff2": "^4.0.1",
     "sass": "^1.51.0",
+    "terser-webpack-plugin": "^5.3.3",
     "webpack": "^5.72.0",
     "webpack-stream": "^7.0.0"
   },
   "dependencies": {
     "@splidejs/splide": "^4.0.7",
     "axios": "^0.27.2",
-    "custom-select": "^1.1.15",
     "inputmask": "^5.0.7",
     "jquery": "^3.6.0",
     "slick-carousel": "^1.8.1"

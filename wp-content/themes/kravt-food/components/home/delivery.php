@@ -32,8 +32,7 @@ $data = get_field( 'main-section_13' );
                     <span><strong>зона ,бесплатной доставки</strong></br>сокращает время доставки до 1 часа</span>
                 </div>
             </div>
-            <div class="block">
-                <img src="/wp-content/themes/kravt-food/build/img/spb-map.png" alt="">
+            <div class="block" id="map" style="width: 904px; height: 527px">
                 <div class="select">
                     <p>Узнайте, в зоне ли доставки ваш адрес:</p>
 

@@ -9,10 +9,10 @@
                 <div>
                     <p>Нутриенты в 1 дне:</p>
                     <span>
-                            <?= file_get_contents( get_template_directory() . '/src/svg/belki.svg' ) ?>
-                            <?= file_get_contents( get_template_directory() . '/src/svg/zhiri.svg' ) ?>
-                            <?= file_get_contents( get_template_directory() . '/src/svg/uglevodi.svg' ) ?>
-                        </span>
+                        <?= file_get_contents( get_template_directory() . '/src/svg/belki.svg' ) ?>
+                        <?= file_get_contents( get_template_directory() . '/src/svg/zhiri.svg' ) ?>
+                        <?= file_get_contents( get_template_directory() . '/src/svg/uglevodi.svg' ) ?>
+                    </span>
                 </div>
                 <div>
                     <p>Цена за день:</p>
@@ -49,22 +49,38 @@
             <div class="block">
                 <p class="head">Шаг 1</p>
                 <div class="select">
-                    <p>
-                        Выберите</br>калорийность питания:
-                    </p>
-                    <select>
-						<?php foreach ( get_field( 'main-section_5' )['callories'] as $item ) {
-							?>
-                            <option value="<?= $item['value'] ?>"><?= $item['value'] ?> ккал</option>
-
-							<?php
-						} ?>
-                    </select>
+                    <p>Выберите</br>калорийность питания</p>
+                    <div class="select-days">
+                        <p>
+                            <b>1800</b>ккал
+                        </p>
+						<?= file_get_contents( get_template_directory() . '/src/svg/Arrow3.svg' ) ?>
+                        <div class="list">
+                            <span class="list-item">
+                                <b>900</b>ккал
+                            </span>
+                            <span class="list-item">
+                                <b>1200</b>ккал
+                            </span>
+                            <span class="list-item">
+                                <b>1500</b>ккал
+                            </span>
+                            <span class="list-item">
+                                <b>1800</b>ккал
+                            </span>
+                            <span class="list-item">
+                                <b>2100</b>ккал
+                            </span>
+                            <span class="list-item">
+                                <b>2500</b>ккал
+                            </span>
+                        </div>
+                    </div>
                 </div>
                 <span>
-                    <?php echo file_get_contents( get_stylesheet_directory() . '/src/svg/Calculator.svg' ); ?>
-                    Рассчитать норму калорий
-                </span>
+                        <?php echo file_get_contents( get_stylesheet_directory() . '/src/svg/Calculator.svg' ); ?>
+                        Рассчитать норму калорий
+                    </span>
             </div>
             <div class="block">
                 <p class="head">
@@ -73,16 +89,41 @@
                 </p>
                 <div class="select">
                     <p>Продолжительность питания:</p>
-                    <select>
-		                <?php for ($i = 1; $i <= 5; $i++) {
-			                ?>
-                            <option value="<?= $i ?>"><?= $i ?> дней</option>
-
-			                <?php
-		                } ?>
-                    </select>
+                    <div class="select-days">
+                        <p>
+                            <b>1</b>дeнь</br>
+                            <span>5200 ₽/день</span>
+                        </p>
+						<?= file_get_contents( get_template_directory() . '/src/svg/Arrow3.svg' ) ?>
+                        <div class="list">
+                            <span class="list-item">
+                                <b>1</b>день</br>
+                                <span>5400 ₽/день</span>
+                            </span>
+                            <span class="list-item">
+                                <b>5</b>дней</br>
+                                <span>5200 ₽/день</span>
+                            </span>
+                            <span class="list-item">
+                                <b>7</b>дней</br>
+                                <span>5200 ₽/день</span>
+                            </span>
+                            <span class="list-item">
+                                <b>14</b>дней</br>
+                                <span>4800 ₽/день</span>
+                            </span>
+                            <span class="list-item">
+                                <b>21</b></br>
+                                <span>4800 ₽/день</span>
+                            </span>
+                            <span class="list-item">
+                                <b>30</b>дней</br>
+                                <span>4800 ₽/день</span>
+                            </span>
+                        </div>
+                    </div>
                 </div>
-                <div>
+                <div class="tumbler">
                     <input type="radio" name="date" label="Дни программы" checked>
                     <input type="radio" name="date" label="Календарь">
                 </div>
@@ -96,7 +137,7 @@
                     <p>Итого за 5 дней: <strong>26 000 ₽</strong></p>
                     <button>
                         оформить заказ
-                        <?= file_get_contents( get_stylesheet_directory() . '/src/svg/Arrow2.svg' ) ?></button>
+						<?= file_get_contents( get_stylesheet_directory() . '/src/svg/Arrow2.svg' ) ?></button>
                     </button>
                 </div>
             </div>
