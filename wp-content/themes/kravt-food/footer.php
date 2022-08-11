@@ -3,11 +3,10 @@
         <div class="top">
             <div class="block">
                 <a href="/" class="logo">
-					<?= file_get_contents( get_template_directory().'/src/svg/logo-footer.svg') ?>
+                    <?= file_get_contents(get_template_directory() . '/src/svg/logo-footer.svg') ?>
                 </a>
                 <div>
-                    <a href="<?= get_field( 'site_phone', 'options' ) ?>"
-                       class="phone"><?= get_field( 'site_phone', 'options' ) ?></a>
+                    <a href="<?= get_field('site_phone', 'options') ?>" class="phone"><?= get_field('site_phone', 'options') ?></a>
                     <a href="mail:info@kravtfood.pro" class="email">info@kravtfood.pro</a>
                     <span class="address">г. Санкт-Петербург, ул. Александра Невского 8А</span>
                 </div>
@@ -34,7 +33,7 @@
                 </nav>
             </div>
             <div class="block">
-            <nav class="footer-nav">
+                <nav class="footer-nav">
                     <ul>
                         <li>
                             <a href="">О компании</a>
@@ -55,7 +54,7 @@
                 </nav>
             </div>
             <div class="block">
-                <button><?= file_get_contents( get_template_directory() . '/src/svg/Arrow2.svg' ) ?>
+                <button><?= file_get_contents(get_template_directory() . '/src/svg/Arrow2.svg') ?>
                     подобрать</br>рацион
                 </button>
             </div>
@@ -68,11 +67,11 @@
             <div class="block">
                 <span>Мы в социальных сетях:</span>
                 <div class="social">
-                    <a href=""><?= file_get_contents( get_template_directory() . '/src/svg/instagram.svg' ) ?></a>
-                    <a href=""><?= file_get_contents( get_template_directory() . '/src/svg/telegram.svg' ) ?></a>
-                    <a href=""><?= file_get_contents( get_template_directory() . '/src/svg/vkontakte.svg' ) ?></a>
-                    <a href=""><?= file_get_contents( get_template_directory() . '/src/svg/whatsapp.svg' ) ?></a>
-                    <a href=""><?= file_get_contents( get_template_directory() . '/src/svg/facebook.svg' ) ?></a>
+                    <a href=""><?= file_get_contents(get_template_directory() . '/src/svg/instagram.svg') ?></a>
+                    <a href=""><?= file_get_contents(get_template_directory() . '/src/svg/telegram.svg') ?></a>
+                    <a href=""><?= file_get_contents(get_template_directory() . '/src/svg/vkontakte.svg') ?></a>
+                    <a href=""><?= file_get_contents(get_template_directory() . '/src/svg/whatsapp.svg') ?></a>
+                    <a href=""><?= file_get_contents(get_template_directory() . '/src/svg/facebook.svg') ?></a>
                 </div>
             </div>
         </div>
@@ -80,31 +79,10 @@
             <span>© 2022 KravtFood — здоровое питание с доставкой</span>
             <div class="block">
                 <span>Дизайн и разработка</span>
-				<?= file_get_contents( get_template_directory() . '/src/svg/affarts-logo.svg' ) ?>
+                <?= file_get_contents(get_template_directory() . '/src/svg/affarts-logo.svg') ?>
             </div>
         </div>
     </div>
-    <script type="text/javascript">
-        // Функция ymaps.ready() будет вызвана, когда
-        // загрузятся все компоненты API, а также когда будет готово DOM-дерево.
-        ymaps.ready(init);
-        function init(){
-            // Создание карты.
-            var myMap = new ymaps.Map("map", {
-                // Координаты центра карты.
-                // Порядок по умолчанию: «широта, долгота».
-                // Чтобы не определять координаты центра карты вручную,
-                // воспользуйтесь инструментом Определение координат.
-                center: [55.76, 37.64],
-                // Уровень масштабирования. Допустимые значения:
-                // от 0 (весь мир) до 19.
-                zoom: 7
-
-
-            }
-            
-        }
-    </script>
 </footer>
 <?php wp_footer(); ?>
 </body>
