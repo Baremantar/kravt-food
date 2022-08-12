@@ -6,7 +6,6 @@ function init() {
         }),
         objectManager = new ymaps.ObjectManager();
     map.controls.get('zoomControl').options.set({size: 'small'});
-    console.log($.getJSON('geoObjects.geojson'));
     $.getJSON('geoObjects.geojson')
         .done(function (geoJson) {
             objectManager.add(geoJson);

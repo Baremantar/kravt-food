@@ -84,6 +84,7 @@
             </div>
             <div class="block">
                 <p class="head">
+                    <span class="nutrition-info">Вы можете выбрать меню как на несколько дней подряд, так и на производьные даты по своему усмотрению</span>
                     Шаг 2
 					<?php echo file_get_contents( get_stylesheet_directory() . '/src/svg/info.svg' ); ?>
                 </p>

@@ -4,6 +4,7 @@ import faq from './faq.js';
 import support from "./support.js";
 import select from "./select.js";
 import map from "./ymap.js";
+import info from "./info.js";
 
 window.onload = () => {
     console.log('document load and parced');
@@ -13,4 +14,5 @@ window.onload = () => {
     support;
     select;
     map;
+    info;
 }

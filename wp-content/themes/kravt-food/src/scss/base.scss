@@ -38,7 +38,12 @@ h4 {
   font-size: 48px;
 }
 
-button{
+button:not(.header-button) {
   font-family: Euclid !important;
+  transition: all 1s ease;
+
+  //&:hover {
+  //  background: #A7D15B !important;
+  //}
 }
 

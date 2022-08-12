@@ -4,6 +4,7 @@ $data = get_field( 'main-section_6' );
 
 <section class="container menus">
     <div class="head">
+        <span class="menus-info">Меню имеет ознакомительный характер. Блюда и ингридиенты могут быть заменены с учетом индивидуальных потребностей.</span>
 		<?= $data['head'] ?>
     </div>
     <div class="slider">
@@ -16,7 +17,6 @@ $data = get_field( 'main-section_6' );
                 </span>
             </div>
             <div class="data-days">
-				<?php // foreach ( $data['menus'] as $key => $item ) { ?>
                 <div>
                     <input type="radio" id="day_0" name="day">
                     <label for="day_0">
