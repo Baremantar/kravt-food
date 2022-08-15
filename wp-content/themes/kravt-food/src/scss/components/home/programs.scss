@@ -72,14 +72,11 @@
       button {
         max-width: 248px;
         min-height: 46px;
-        background: transparent;
-        border-radius: 100px;
-        font-weight: 600;
         font-size: 16px;
         transition: all ease .3s;
-        border: 1px solid transparent;
         margin-top: auto;
-
+        border: 1px solid;
+        background-color: transparent;
       }
 
       &:hover button {

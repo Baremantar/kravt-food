@@ -273,10 +273,15 @@
                 font-size: 12px;
                 color: $grey;
               }
-
+              svg {
+                transition: transform .3s ease;
+                &.active {
+                  transform: rotate(180deg);
+                }
+              }
               &.active {
                 .list {
-                  height: auto;
+                  max-height: 600px;
                 }
               }
 
@@ -287,13 +292,14 @@
                 top: calc(100% + 9px);
                 left: 0;
                 gap: 0px;
+                max-height: 0;
                 filter: drop-shadow(0px 10px 23px rgba(9, 11, 10, 0.06));
                 border-radius: 8px;
                 width: 100%;
                 background: $white;
                 z-index: 1;
-                transition: all .3s ease;
-                height: 0;
+                transition: max-height .5s ease;
+                height: auto;
                 overflow: hidden;
 
                 &-item {
@@ -358,14 +364,13 @@
                 position: absolute;
                 max-width: 384px;
                 display: flex;
-                position: absolute;
                 width: 100%;
                 background: $white;
                 box-shadow: 0px 10px 23px rgba(9, 11, 10, 0.06);
                 border-radius: 8px;
+                transition: opacity .3s ease;
                 opacity: 0;
                 overflow: hidden;
-                transition: all .3s ease;
 
                 &.active {
                   opacity: 1;
@@ -462,20 +467,9 @@
 
               button {
                 margin-top: 18px;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                outline: none;
-                gap: 12px;
-                border: transparent;
                 padding: 16px 0;
-                text-transform: uppercase;
-                font-weight: 600;
-                font-size: 18px;
                 color: $white;
-                background: linear-gradient(0deg, #A9D953, #A9D953), #33D16D;
-                border-radius: 100px;
-              }
+               }
             }
           }
         }

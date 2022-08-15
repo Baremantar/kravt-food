@@ -173,7 +173,8 @@
 
         }
 
-        &__list {}
+        &__list {
+        }
 
         &__slide {
           min-height: 270px;
@@ -239,26 +240,19 @@
     }
 
     .choice {
-      display: flex;
+      color: $black-middle;
       flex-direction: column;
-      border: transparent;
-      justify-content: center;
-      align-items: center;
+      position: absolute;
       line-height: 150%;
       height: 240px;
       width: 240px;
+      gap: 0;
       border-radius: 50%;
       padding-bottom: 19px;
       letter-spacing: -1.1px;
-      background: linear-gradient(0deg, #A9D953, #A9D953), #33D16D;
-      outline: none;
       top: 370px;
       right: 467px;
-      font-weight: 600;
       font-size: 24px;
-      text-transform: uppercase;
-      position: absolute;
-      text-align: center;
 
       svg {
         position: absolute;

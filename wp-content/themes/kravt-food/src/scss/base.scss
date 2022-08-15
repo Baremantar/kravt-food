@@ -40,10 +40,31 @@ h4 {
 
 button:not(.header-button) {
   font-family: Euclid !important;
-  transition: all 1s ease;
+  transition: background-color .3s ease;
+  background-color: $green-light;
+  border-radius: 100px;
+  color: $white;
+  display: flex;
+  font-weight: 600;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  font-size: 18px;
+  text-transform: uppercase;
+  border: transparent;
+  outline: none;
 
-  //&:hover {
-  //  background: #A7D15B !important;
-  //}
+  &:hover {
+    background: $green;
+  }
 }
 
+header, footer {
+  a {
+    transition: all ease-in-out 0.3s;
+
+    &:hover {
+      color: #9BD03D;
+    }
+  }
+}

@@ -92,3 +92,14 @@
     }
   }
 }
+
+@media (max-width: 1440px) {
+  .benefits {
+    div {
+      &:first-child {
+        h2 {
+          margin-left: 54px;
+        }
+      }}
+  }
+}
