@@ -2,8 +2,6 @@
 function isMobile() {
 	return preg_match( "/(android|avantgo|blackberry|bolt|boost|cricket|docomo|fone|hiptop|mini|mobi|palm|phone|pie|tablet|up\.browser|up\.link|webos|wos)/i", $_SERVER["HTTP_USER_AGENT"] );
 }
-
-;
 ?>
 
 <!DOCTYPE html>
@@ -21,55 +19,55 @@ function isMobile() {
 
 <body>
 <header>
-	<?php //if ( isMobile() ) {
+	<?php if ( isMobile() ) {
 	?>
-<!--    <div class="header-wrapper">-->
-<!--        <a href="/" class="header-logo">-->
-			<?php //= file_get_contents( get_field( 'site_logo', 'options' )['mobile']['url'] ) ?>
-<!--        </a>-->
-<!--        <div class="header-city">-->
-<!--            <span class="current">-->
+    <div class="header-wrapper">
+        <a href="/" class="header-logo">
+			<?= file_get_contents( get_field( 'site_logo', 'options' )['mobile']['url'] ) ?>
+        </a>
+        <div class="header-city">
+            <span class="current">
 <?php
-//                echo file_get_contents( get_stylesheet_directory() . '/src/svg/location.svg' );
-//                echo get_blog_details( get_site()->blog_id )->blogname;
-//                echo file_get_contents( get_stylesheet_directory() . '/src/svg/arrow.svg' );
-//                ?>
-<!--            </span>-->
-<!--            <div class="hidden">-->
-<?php
-//				foreach ( get_sites() as $items ) { ?>
-<!--                    <a href="--><?php //= get_blog_details( $items->blog_id )->siteurl ?><!--">--><?php //= get_blog_details( $items->blog_id )->blogname ?><!--</a>-->
-<!--				--><?php //} ?>
-<!--            </div>-->
-<!--        </div>-->
-<!--        <div class="header-dropdown">-->
+echo file_get_contents( get_stylesheet_directory() . '/src/svg/location.svg' );
+echo get_blog_details( get_site()->blog_id )->blogname;
+echo file_get_contents( get_stylesheet_directory() . '/src/svg/arrow.svg' );
+?>
+            </span>
+            <div class="hidden">
+				<?php
+				foreach ( get_sites() as $items ) { ?>
+                    <a href="<?= get_blog_details( $items->blog_id )->siteurl ?>"><?= get_blog_details( $items->blog_id )->blogname ?></a>
+				<?php } ?>
+            </div>
+        </div>
+        <div class="header-dropdown">
 			<?php
-//			wp_nav_menu( [
-//				'theme_location'  => '',
-//				'menu'            => 'menu-header',
-//				'container'       => 'nav',
-//				'container_class' => 'header-nav',
-//				'container_id'    => '',
-//				'menu_class'      => '',
-//				'menu_id'         => '',
-//				'echo'            => true,
-//				'fallback_cb'     => 'wp_page_menu',
-//				'before'          => '',
-//				'after'           => '',
-//				'link_before'     => '',
-//				'link_after'      => '',
-//				'items_wrap'      => '<ul id="%1$s" class="%2$s">%3$s</ul>',
-//				'depth'           => 0,
-//				'walker'          => '',
-//			] );
+			wp_nav_menu( [
+				'theme_location'  => '',
+				'menu'            => 'menu-header',
+				'container'       => 'nav',
+				'container_class' => 'header-nav',
+				'container_id'    => '',
+				'menu_class'      => '',
+				'menu_id'         => '',
+				'echo'            => true,
+				'fallback_cb'     => 'wp_page_menu',
+				'before'          => '',
+				'after'           => '',
+				'link_before'     => '',
+				'link_after'      => '',
+				'items_wrap'      => '<ul id="%1$s" class="%2$s">%3$s</ul>',
+				'depth'           => 0,
+				'walker'          => '',
+			] );
 			?>
-<!--            <a href="tel:--><?php //= get_field( 'site_phone', 'options' ) ?><!--"-->
-<!--               class="header-phone">--><?php //= get_field( 'site_phone', 'options' ) ?><!--</a>-->
-<!--            <button class="header-button">перезвоните мне</button>-->
-<!--        </div>-->
+            <a href="tel:<?= get_field( 'site_phone', 'options' ) ?>"
+               class="header-phone"><?= get_field( 'site_phone', 'options' ) ?></a>
+            <button class="header-button">перезвоните мне</button>
+        </div>
 		<?php
-//		} else {
-        ?>
+		} else {
+		?>
         <div class="header-wrapper">
             <a href="/" class="header-logo">
 				<?= file_get_contents( get_field( 'site_logo', 'options' )['desktop']['url'] ) ?>
@@ -113,7 +111,7 @@ function isMobile() {
                class="header-phone"><?= get_field( 'site_phone', 'options' ) ?></a>
             <button class="header-button">перезвоните мне</button>
 			<?php
-//			}
+			}
 			?>
 
         </div>
