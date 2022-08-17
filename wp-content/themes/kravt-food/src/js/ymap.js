@@ -2,33 +2,14 @@ ymaps.ready(init);
 
 function init() {
     var myMap = new ymaps.Map("map", {
-            center: [55.76, 37.64], zoom: 12, controls: ['zoomControl'],
-        });
-    // let objectManager = new ymaps.ObjectManager();
-    myMap.controls.add('searchControl', {
-        // Расположим поисковую строку справа.
-        float: 'left',
-        // Включим возможность искать организации.
+        center: [55.76, 37.64], zoom: 12, controls: []
     });
-    myMap.controls.get('zoomControl').options.set({size: 'small'});
+    
+    var suggestView = new ymaps.SuggestView('suggest');
     ymaps.geoXml.load('http://baremantar.ru/geoObjects.kml')
         .then(function (res) {
             myMap.geoObjects.add(res.geoObjects);
         });
-    // function onGeoXmlLoad(res) {
-    //     myMap.geoObjects.add(res.geoObjects);
-    //     if (res.mapState) {
-    //         res.mapState.applyToMap(myMap);
-    //     }
-    //     else {
-    //         myMap.setBounds(res.geoObjects.getBounds());
-    //     }
-    // }
-    // $.getJSON('geoObjects.geojson')
-    //     .done(function (geoJson) {
-    //         objectManager.add(geoJson);
-    //         map.geoObjects.add(objectManager);
-    //     });
 }
 
 export default ymaps;

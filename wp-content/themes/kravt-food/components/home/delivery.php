@@ -35,13 +35,7 @@ $data = get_field( 'main-section_13' );
             <div class="block" id="map" style="width: 904px; height: 527px">
                 <div class="select">
                     <p>Узнайте, в зоне ли доставки ваш адрес:</p>
-
-                    <span>
-                        <?= file_get_contents(get_template_directory().'/src/svg/pin.svg') ?>
-                        Местоположение
-                        <?= file_get_contents(get_template_directory().'/src/svg/arrow3.svg') ?>
-                    </span>
-                    
+                    <input type="text" id="suggest" placeholder="Местоположение">
                 </div>
             </div>
         </div>

@@ -128,13 +128,13 @@
               border-radius: 8px;
               min-width: 352px;
               max-height: 118px;
-              //z-index: 3;
+              z-index: 3;
 
               p {
                 font-size: 14px;
               }
 
-              span {
+              input {
                 border-radius: 8px;
                 display: flex;
                 gap: 12px;
@@ -147,11 +147,7 @@
                 justify-content: flex-start;
                 font-size: 14px;
                 cursor: pointer;
-                svg {
-                  &:last-child{
-                    margin-left: auto ;
-                  }
-                }
+
               }
             }
           }

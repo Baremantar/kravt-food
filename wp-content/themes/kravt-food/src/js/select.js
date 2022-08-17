@@ -1,18 +1,18 @@
 function select() {
-    let list = document.getElementsByClassName('select-days')
-    for (let item of list) {
-        item.addEventListener('click', (element) => {
-            element.target.getElementsByTagName('svg')[0].classList.toggle('active');
-            if (element.target.classList.contains('select-days')) {
-                element.target.classList.toggle('active');
+    if (document.getElementsByClassName('select-days')) {
+        for (let item of document.getElementsByClassName('select-days')) {
+            item.addEventListener('click', (event) => {
+                event.target.closest('.select-days').children[1].classList.toggle('active');
+                event.target.closest('.select-days').classList.toggle('active')
+            })
 
-            } else {
-                element.target.parentNode.classList.toggle('active')
-
+            for (let listItem of item.querySelector('.list').children) {
+                listItem.addEventListener('click', (event) => {
+                    item.querySelector('p').innerHTML = listItem.innerHTML;
+                })
             }
-        })
+        }
     }
-
 }
 
 export default select();

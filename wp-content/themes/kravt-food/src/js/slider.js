@@ -9,65 +9,73 @@ var dataSlider = {
 }
 
 function slider() {
-    var mainSlider = new Splide('.background', {
-        type: 'loop',
-        rewind: true,
-        perPage: 1,
-        autoplay: true,
-        interval: 6000,
-        arrows: false,
-    });
-
-    document.getElementsByClassName('content')[0].children[0].classList.add('active');
-
-    mainSlider.on('active', () => {
-        mainSlider.Components.Slides.get().forEach((elem) => {
-            if (elem.slide.classList.contains('is-active') && !elem.slide.classList.contains('splide__slide--clone')) {
-                document.querySelectorAll('[data-slide]').forEach((element) => {
-                    element.classList.remove('active')
-                })
-                document.querySelector(`[data-slide="${elem.index}"]`).classList.toggle('active')
-            }
-        })
-    })
-
-    var n = 1;
-    mainSlider.on('pagination:mounted', function (data) {
-        data.list.classList.add('splide__pagination--custom');
-        data.items.forEach(function (item) {
-            item.button.textContent = String(dataSlider[n++]);
+    if (document.getElementsByClassName("background")) {
+        var mainSlider = new Splide('.background', {
+            type: 'loop',
+            rewind: true,
+            perPage: 1,
+            autoplay: true,
+            interval: 6000,
+            arrows: false,
         });
-    });
-    mainSlider.mount();
 
-    new Splide('.mini-slider', {
-        type: 'fade',
-        arrows: false,
-        rewind: true,
+        document.getElementsByClassName('content')[0].children[0].classList.add('active');
 
-    }).mount();
+        mainSlider.on('active', () => {
+            mainSlider.Components.Slides.get().forEach((elem) => {
+                if (elem.slide.classList.contains('is-active') && !elem.slide.classList.contains('splide__slide--clone')) {
+                    document.querySelectorAll('[data-slide]').forEach((element) => {
+                        element.classList.remove('active')
+                    })
+                    document.querySelector(`[data-slide="${elem.index}"]`).classList.toggle('active')
+                }
+            })
+        })
+        var n = 1;
+        mainSlider.on('pagination:mounted', function (data) {
+            data.list.classList.add('splide__pagination--custom');
+            data.items.forEach(function (item) {
+                item.button.textContent = String(dataSlider[n++]);
+            });
+        });
+        mainSlider.mount();
+    }
 
-    new Splide('.menu', {
-        type: 'slider',
-        pagination: false,
-        perPage: 4,
-        perMove: 1,
-    }).mount();
+    if (document.getElementsByClassName("mini-slider")) {
+        new Splide('.mini-slider', {
+            type: 'fade',
+            arrows: false,
+            rewind: true,
 
-    new Splide('.peoples', {
-        type: 'loop',
-        pagination: false,
-        perPage: 4,
-        perMove: 1,
-    }).mount();
+        }).mount();
+    }
 
-    new Splide('.reviews', {
-        type: 'slider',
-        pagination: false,
-        perMove: 1,
-        perPage: 1,
-    }).mount();
+    if (document.getElementsByClassName("menu")) {
+        new Splide('.menu', {
+            type: 'slider',
+            pagination: false,
+            perPage: 4,
+            perMove: 1,
+        }).mount();
+    }
 
+    if (document.getElementsByClassName("peoples")) {
+        new Splide('.peoples', {
+            type: 'loop',
+            pagination: false,
+            perPage: 4,
+            perMove: 1,
+        }).mount();
+    }
+
+    if (document.getElementsByClassName("reviews")) {
+        new Splide('.reviews', {
+            type: 'slider',
+            pagination: false,
+            perMove: 1,
+            perPage: 1,
+        }).mount();
+    }
 }
 
 export default slider();
