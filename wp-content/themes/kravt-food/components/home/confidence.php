@@ -14,7 +14,7 @@ $data = get_field( 'main-section_11' );
                 >
 	                <?php
 	                if ( strpos( $_SERVER['HTTP_USER_AGENT'], 'Safari' ) !== false ) { ?>
-		                <?= file_get_contents( get_template_directory() . '/src/img/arrow.png' ) ?><?php
+                        <img src="/wp-content/themes/kravt-studio/src/img/arrow.png" alt="arrow"><?php
 	                } else { ?>
 		                <?= file_get_contents( get_template_directory() . '/src/svg/buttonArrow.svg' ) ?><?php } ?>
                 </button>
@@ -26,7 +26,7 @@ $data = get_field( 'main-section_11' );
                 >
 	                <?php
 	                if ( strpos( $_SERVER['HTTP_USER_AGENT'], 'Safari' ) !== false ) { ?>
-		                <?= file_get_contents( get_template_directory() . '/src/img/arrow.png' ) ?><?php
+                        <img src="/wp-content/themes/kravt-studio/src/img/arrow.png" alt="arrow"><?php
 	                } else { ?>
 		                <?= file_get_contents( get_template_directory() . '/src/svg/buttonArrow.svg' ) ?><?php } ?>
                 </button>
