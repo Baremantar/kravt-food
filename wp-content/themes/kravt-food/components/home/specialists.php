@@ -17,9 +17,9 @@ $data = get_field( 'main-section_8' );
                 >
 	                <?php
 	                if ( strpos( $_SERVER['HTTP_USER_AGENT'], 'Safari' ) !== false ) { ?>
-                        <img src="/wp-content/themes/kravt-food/src/img/arrow.png" alt="arrow"><?php
+		                <?= file_get_contents( get_template_directory() . '/src/svg/buttonArrow.svg' ) ?> <?php
 	                } else { ?>
-		                <?= file_get_contents( get_template_directory() . '/src/svg/buttonArrow.svg' ) ?><?php } ?>
+                        <img src="/wp-content/themes/kravt-food/src/img/arrow.png" alt="arrow"><?php } ?>
                 </button>
                 <button
                         class="splide__arrow splide__arrow--next"
@@ -29,9 +29,9 @@ $data = get_field( 'main-section_8' );
                 >
 	                <?php
 	                if ( strpos( $_SERVER['HTTP_USER_AGENT'], 'Safari' ) !== false ) { ?>
-                        <img src="/wp-content/themes/kravt-food/src/img/arrow.png" alt="arrow"><?php
+		                <?= file_get_contents( get_template_directory() . '/src/svg/buttonArrow.svg' ) ?> <?php
 	                } else { ?>
-		                <?= file_get_contents( get_template_directory() . '/src/svg/buttonArrow.svg' ) ?><?php } ?>
+                        <img src="/wp-content/themes/kravt-food/src/img/arrow.png" alt="arrow"><?php } ?>
                 </button>
             </div>
             <ul class="splide__list">
