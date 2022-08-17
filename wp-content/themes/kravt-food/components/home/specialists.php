@@ -15,11 +15,7 @@ $data = get_field( 'main-section_8' );
                         aria-label="Previous slide"
                         aria-controls="splide01-track"
                 >
-	                <?php
-	                if ( strpos( $_SERVER['HTTP_USER_AGENT'], 'Safari' ) !== false ) { ?>
-		                <?= file_get_contents( get_template_directory() . '/src/svg/buttonArrow.svg' ) ?> <?php
-	                } else { ?>
-                        <img src="/wp-content/themes/kravt-food/src/img/arrow.png" alt="arrow"><?php } ?>
+                    <img src="/wp-content/themes/kravt-food/src/img/arrow.png" alt="arrow">
                 </button>
                 <button
                         class="splide__arrow splide__arrow--next"
@@ -27,11 +23,7 @@ $data = get_field( 'main-section_8' );
                         aria-label="Next slide"
                         aria-controls="splide01-track"
                 >
-	                <?php
-	                if ( strpos( $_SERVER['HTTP_USER_AGENT'], 'Safari' ) !== false ) { ?>
-		                <?= file_get_contents( get_template_directory() . '/src/svg/buttonArrow.svg' ) ?> <?php
-	                } else { ?>
-                        <img src="/wp-content/themes/kravt-food/src/img/arrow.png" alt="arrow"><?php } ?>
+                    <img src="/wp-content/themes/kravt-food/src/img/arrow.png" alt="arrow">
                 </button>
             </div>
             <ul class="splide__list">

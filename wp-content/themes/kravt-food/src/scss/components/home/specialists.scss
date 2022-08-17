@@ -3,8 +3,7 @@
 }
 
 .specialists {
-  margin-top: 152px;
-  ;
+  margin-top: 152px;;
 
   .head {
     max-width: 1368px;
@@ -191,20 +190,18 @@
         max-width: 1368px;
         width: 100%;
 
-        &__arrow {
-          border: none;
-          background-color: transparent;
-          width: fit-content;
-          height: fit-content;
-        }
+      }
 
-        &__arrow--next {
-          svg {
-            transform: rotate(180deg);
-          }
-          img {
-            transform: rotate(180deg);
-          }
+      &__arrow {
+        border: none;
+        background-color: transparent;
+        width: fit-content;
+        height: fit-content;
+      }
+
+      &__arrow--next {
+        img {
+          transform: rotate(180deg);
         }
       }
     }

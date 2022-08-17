@@ -6,6 +6,7 @@ Template Name: Homepage
 
 <?php
 get_header();
+
 ?>
 <main class="homepage">
 	<?php
