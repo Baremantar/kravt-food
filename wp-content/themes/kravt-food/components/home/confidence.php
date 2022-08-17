@@ -12,7 +12,11 @@ $data = get_field( 'main-section_11' );
                         aria-label="Previous slide"
                         aria-controls="splide01-track"
                 >
-					<?= file_get_contents( get_template_directory() . '/src/svg/buttonArrow.svg' ) ?>
+	                <?php
+	                if ( strpos( $_SERVER['HTTP_USER_AGENT'], 'Safari' ) !== false ) { ?>
+		                <?= file_get_contents( get_template_directory() . '/src/img/arrow.png' ) ?><?php
+	                } else { ?>
+		                <?= file_get_contents( get_template_directory() . '/src/svg/buttonArrow.svg' ) ?><?php } ?>
                 </button>
                 <button
                         class="splide__arrow splide__arrow--next"
@@ -20,7 +24,11 @@ $data = get_field( 'main-section_11' );
                         aria-label="Next slide"
                         aria-controls="splide01-track"
                 >
-					<?= file_get_contents( get_template_directory() . '/src/svg/buttonArrow.svg' ) ?>
+	                <?php
+	                if ( strpos( $_SERVER['HTTP_USER_AGENT'], 'Safari' ) !== false ) { ?>
+		                <?= file_get_contents( get_template_directory() . '/src/img/arrow.png' ) ?><?php
+	                } else { ?>
+		                <?= file_get_contents( get_template_directory() . '/src/svg/buttonArrow.svg' ) ?><?php } ?>
                 </button>
             </div>
             <ul class="splide__list">

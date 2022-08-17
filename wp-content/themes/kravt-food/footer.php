@@ -77,10 +77,10 @@
         </div>
         <div class="bottom">
             <span>© 2022 KravtFood — здоровое питание с доставкой</span>
-            <div class="block">
+            <a class="block" href="http://affarts.com">
                 <span>Дизайн и разработка</span>
                 <?= file_get_contents(get_template_directory() . '/src/svg/affarts-logo.svg') ?>
-            </div>
+            </a>
         </div>
     </div>
 </footer>

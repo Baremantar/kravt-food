@@ -77,7 +77,7 @@
                         </div>
                     </div>
                 </div>
-                <span>
+                <span class="calculate_norm">
                         <?php echo file_get_contents( get_stylesheet_directory() . '/src/svg/Calculator.svg' ); ?>
                         Рассчитать норму калорий
                     </span>

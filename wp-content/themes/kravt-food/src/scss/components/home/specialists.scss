@@ -191,13 +191,18 @@
         max-width: 1368px;
         width: 100%;
 
-        button {
-          height: 40px;
-          background-color: transparent;
+        &__arrow {
           border: none;
-          outline: none;
+          background-color: transparent;
+          width: fit-content;
+          height: fit-content;
+        }
 
-          &:last-child {
+        &__arrow--next {
+          svg {
+            transform: rotate(180deg);
+          }
+          img {
             transform: rotate(180deg);
           }
         }

@@ -276,7 +276,7 @@
               svg {
                 transition: transform .3s ease;
                 &.active {
-                  transform: rotate(180deg);
+                  transform: rotate(180deg  );
                 }
               }
               &.active {
@@ -342,8 +342,9 @@
               }
             }
 
-            span {
+            .calculate_norm {
               margin-top: 40px;
+              cursor: pointer;
               display: flex;
               gap: 10px;
             }

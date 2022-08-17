@@ -5,10 +5,13 @@ function init() {
             center: [55.76, 37.64], zoom: 12, controls: ['zoomControl'],
         });
     // let objectManager = new ymaps.ObjectManager();
-                                                        
+    myMap.controls.add('searchControl', {
+        // Расположим поисковую строку справа.
+        float: 'left',
+        // Включим возможность искать организации.
+    });
     myMap.controls.get('zoomControl').options.set({size: 'small'});
-    // console.log(ymaps.geoXml.load('http://kravt-food.ru/geoObjects.kml'))
-    ymaps.geoXml.load('http://kravt-food.ru/geoObjects.kml')
+    ymaps.geoXml.load('http://baremantar.ru/geoObjects.kml')
         .then(function (res) {
             myMap.geoObjects.add(res.geoObjects);
         });

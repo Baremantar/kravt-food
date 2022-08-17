@@ -2,6 +2,7 @@
 function isMobile() {
 	return preg_match( "/(android|avantgo|blackberry|bolt|boost|cricket|docomo|fone|hiptop|mini|mobi|palm|phone|pie|tablet|up\.browser|up\.link|webos|wos)/i", $_SERVER["HTTP_USER_AGENT"] );
 }
+
 ?>
 
 <!DOCTYPE html>
@@ -40,6 +41,10 @@ echo file_get_contents( get_stylesheet_directory() . '/src/svg/arrow.svg' );
 				<?php } ?>
             </div>
         </div>
+        <div class="header-burger">
+            <span></span>
+            <span></span>
+        </div>
         <div class="header-dropdown">
 			<?php
 			wp_nav_menu( [
@@ -64,6 +69,16 @@ echo file_get_contents( get_stylesheet_directory() . '/src/svg/arrow.svg' );
             <a href="tel:<?= get_field( 'site_phone', 'options' ) ?>"
                class="header-phone"><?= get_field( 'site_phone', 'options' ) ?></a>
             <button class="header-button">перезвоните мне</button>
+            <div class="header-manager">
+                <div class="manager-person">
+                    <img src="<?= get_field( 'main-section_3' )['image']['url'] ?>" alt="manager">
+		            <?= get_field( 'main-section_3' )['text'] ?>
+                </div>
+                <div class="manager-link">
+                    <a href="<?= get_field( 'main-section_3' )['tg_link'] ?>"><?= file_get_contents( get_stylesheet_directory() . '/src/svg/telegram.svg' ) ?></a>
+                    <a href="<?= get_field( 'main-section_3' )['wa_link'] ?>"><?= file_get_contents( get_stylesheet_directory() . '/src/svg/whatsapp.svg' ) ?></a>
+                </div>
+            </div>
         </div>
 		<?php
 		} else {

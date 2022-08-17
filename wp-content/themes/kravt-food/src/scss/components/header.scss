@@ -128,12 +128,45 @@ header {
     &-dropdown {
       display: flex;
       position: absolute;
+      width: 100%;
       max-width: 100vw;
-      max-height: 100vh;
+      padding: 0 16px;
+      min-height: 100vh;
       top: 100%;
       background-color: $white;
       left: 0;
       flex-direction: column;
+    }
+
+    &-burger {
+      margin-left: auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      max-width: 32px;
+      min-height: 32px;
+      align-self: start;
+      gap: 8px;
+      margin-top: 5px;
+      cursor: pointer;
+
+      span {
+        display: flex;
+        background-color: $black-middle;
+        width: 100%;
+        max-width: 17px;
+        height: 1px;
+        border-radius: 2px;
+      }
+    }
+
+    &-manager {
+      display: flex;
+      margin-top: 24px;
+      padding-top: 24px;
+      border-top: 1px solid $grey-light2;
     }
   }
 }
@@ -146,23 +179,67 @@ header {
     .header {
       &-logo {
         svg {
-          margin-top: unset;
+          margin-top: 5px;
         }
       }
+
+      &-city {
+        min-width: unset;
+        margin-bottom: 20px;
+        margin-left: 21px;
+
+        .current {
+          svg {
+            height: 20px;
+            margin-right: unset;
+
+            &:first-child {
+              margin-right: 2px;
+            }
+
+            &:last-child {
+              margin-left: 16px;
+            }
+          }
+        }
+      }
+
       &-wrapper {
         max-width: unset;
+        padding: 0 16px;
       }
+
       &-phone, &-button, &-nav {
         margin: unset;
       }
 
       &-nav {
+        border-bottom: 1px solid $grey-light2;
 
         ul {
           flex-direction: column;
           gap: 0;
         }
+
+        a {
+          width: 100%;
+          height: 100%;
+          display: flex;
+          padding: 20px 0;
+          font-size: 18px;
+        }
+      }
+
+      &-phone {
+        font-size: 18px;
+        margin-top: 24px;
+      }
+
+      &-button {
+        margin-top: 20px;
       }
     }
   }
 }
+
+

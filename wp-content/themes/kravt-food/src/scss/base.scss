@@ -38,7 +38,7 @@ h4 {
   font-size: 48px;
 }
 
-button:not(.header-button) {
+button:not(.header-button, .splide__arrow) {
   font-family: Euclid !important;
   transition: background-color .3s ease;
   background-color: $green-light;
@@ -67,4 +67,9 @@ header, footer {
       color: #9BD03D;
     }
   }
+}
+
+[class*="ymaps-2"][class*="-ground-pane"] {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
 }
