@@ -5,6 +5,7 @@ import support from "./support.js";
 import select from "./select.js";
 import map from "./ymap.js";
 import info from "./info.js";
+import orderCall from "./order-calls.js";
 
 window.onload = () => {
     console.log('document load and parced');
@@ -15,4 +16,5 @@ window.onload = () => {
     select;
     map;
     info;
+    orderCall;
 }

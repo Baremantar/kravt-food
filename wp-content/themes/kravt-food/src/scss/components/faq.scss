@@ -1,0 +1,193 @@
+.faq {
+  margin-top: 160px;
+
+  .wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 31px;
+
+    div {
+      &:first-child {
+        .head {
+          h2 {
+            img {
+              display: inline;
+              position: absolute;
+            }
+          }
+        }
+
+        .switcher {
+          gap: 32px;
+          margin-top: 63px;
+
+
+
+          .element {
+            display: flex;
+
+            &:last-child {
+              gap: 0px;
+            }
+
+            label {
+              transition: all ease .3s;
+              display: flex;
+              align-items: center;
+              flex-wrap: wrap;
+              border: 1px solid $grey-middle-light;
+              height: 100%;
+              width: 100%;
+              padding: 11px 20px 11px 31px;
+              cursor: pointer;
+              border-radius: 32px;
+              position: relative;
+              max-width: 247px;
+              gap: 12px;
+
+              svg {
+                width: 32px;
+                height: 32px;
+              }
+
+              span {
+                font-weight: 400;
+                font-size: 18px;
+              }
+            }
+
+            input[type="radio"] {
+              opacity: 0;
+              width: 0;
+              height: 0;
+            }
+
+            input[type="radio"]:active~label {
+              opacity: 1;
+            }
+
+            input[type="radio"]:checked~label {
+              opacity: 1;
+              border: 1px solid $green;
+
+              span {
+                font-weight: 600;
+              }
+
+            }
+          }
+        }
+      }
+
+      &:last-child {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+
+        .info {
+          display: flex;
+          flex-direction: column;
+          position: relative;
+          background: $white;
+          border: 1px solid $grey-light;
+          border-radius: 12px;
+          padding: 20px 24px;
+          overflow: hidden;
+          height: 110px;
+          transition: all ease .3s;
+          cursor: pointer;
+
+          &.active {
+            height: auto;
+
+            span {
+              &:nth-child(2) {
+                font-size: 14px;
+                margin-top: 22px;
+                color: $grey-middle;
+              }
+            }
+
+            .close {
+              &:before {
+                transform: scale(0);
+              }
+            }
+          }
+
+          p {
+            &:nth-child(1) {
+              font-weight: 600;
+              font-size: 24px;
+              line-height: 130%;
+            }
+
+            &:nth-child(4) {
+              margin-top: 20px;
+              line-height: 138%;
+            }
+          }
+
+          span {
+            &:nth-child(2) {
+              font-size: 14px;
+              margin-top: 150px;
+              color: $grey-middle;
+            }
+          }
+
+          .manager {
+            margin-top: 12px;
+            display: flex;
+            gap: 12px;
+            align-items: center;
+
+            img {
+              max-height: 55px;
+            }
+
+            p {
+              font-weight: 500;
+
+              span {
+                margin-top: 8px !important;
+                font-size: 12px !important;
+                color: $grey;
+              }
+            }
+          }
+
+          .close {
+            top: 33px;
+            right: 24px;
+            content: '';
+            width: 20px;
+            height: 20px;
+            position: absolute;
+
+            &:before,
+            &:after {
+              transition: .3s all ease;
+              content: '';
+              background: linear-gradient(0deg, #A9D953, #A9D953), #33D16D;
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%, -50%);
+            }
+
+            &:before {
+              width: 2px;
+              height: 100%;
+            }
+
+            &:after {
+              height: 2px;
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+}

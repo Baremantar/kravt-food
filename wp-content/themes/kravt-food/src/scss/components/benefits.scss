@@ -1,0 +1,131 @@
+.benefits {
+  flex-direction: row;
+  padding-top: 130px;
+  padding-bottom: 160px;
+  gap: 134px;
+  align-items: flex-start; // center
+  justify-content: flex-start; //center
+
+  div {
+    &:first-child {
+      position: relative;
+
+      h2 {
+        margin-top: 89px;
+        margin-left: 59px;
+      }
+
+      .wheel {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        left: 55.9%;
+        transform: translateX(-50%);
+        top: calc(100% + 17px);
+        width: 286px;
+        height: 286px;
+        background-color: $white;
+        border-radius: 50%;
+
+        img {
+          &:first-child {
+            z-index: 1;
+          }
+
+        }
+          svg {
+            position: absolute;
+            -webkit-animation: rotating 20s linear infinite;
+            -moz-animation: rotating 20s linear infinite;
+            -ms-animation: rotating 20s linear infinite;
+            -o-animation: rotating 20s linear infinite;
+            animation: rotating 20s linear infinite;
+          }
+      }
+
+    }
+
+    &:last-child {
+      display: flex;
+      flex-direction: column;
+      gap: 32px;
+
+      .item-wrapper {
+        display: flex;
+        flex-direction: row;
+        gap: 40px;
+
+        &:nth-child(1) {
+          svg {
+            margin-top: 19px;
+          }
+
+          div {
+            h4 {
+              margin-top: 11px;
+            }
+          }
+        }
+
+        &:nth-child(2) {
+          svg {
+            margin-top: 6px;
+          }
+
+          div {
+            h4 {
+              margin-top: -2px;
+            }
+          }
+        }
+
+        &:nth-child(2) {
+          svg {
+            margin-top: 6px;
+          }
+        }
+
+        &:nth-child(3) {
+          svg {
+            margin-top: 8px;
+          }
+        }
+
+        &:nth-child(4 ) {
+          svg {
+            margin-top: 7px;
+          }
+        }
+
+        div {
+          max-width: 460px;
+          flex-direction: column;
+          gap: 12px;
+          font-size: 16px;
+
+          h4 {
+            font-size: 24px;
+            line-height: 130%;
+          }
+
+          p {
+            line-height: 140%;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1440px) {
+  .benefits {
+    div {
+      &:first-child {
+        h2 {
+          margin-left: 54px;
+        }
+      }
+    }
+  }
+}

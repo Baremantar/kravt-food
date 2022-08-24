@@ -334,7 +334,7 @@
                     "label": "Изображение",
                     "name": "image",
                     "type": "image",
-                    "instructions": "",
+                    "instructions": "Изображение должно быть 210x210px",
                     "required": 0,
                     "conditional_logic": 0,
                     "wrapper": {
@@ -345,11 +345,11 @@
                     "return_format": "array",
                     "preview_size": "full",
                     "library": "all",
-                    "min_width": "",
-                    "min_height": "",
+                    "min_width": 210,
+                    "min_height": 210,
                     "min_size": "",
-                    "max_width": "",
-                    "max_height": "",
+                    "max_width": 210,
+                    "max_height": 210,
                     "max_size": "",
                     "mime_types": ""
                 }
@@ -2024,5 +2024,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1659997503
+    "modified": 1660829544
 }

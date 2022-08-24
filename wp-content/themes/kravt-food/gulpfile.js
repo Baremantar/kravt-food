@@ -8,7 +8,8 @@ import { scss } from "./gulp/tasks/scss.js";
 import { js } from "./gulp/tasks/js.js";
 
 import { plugins } from "./gulp/config/plugins.js";
-import { fontsStyle, otfToTtf, ttfToWoff } from "./gulp/tasks/fonts.js";
+import { fontsStyle //,ttfToWoff
+ } from "./gulp/tasks/fonts.js";
 
 global.app = {
     path: path,
@@ -23,7 +24,7 @@ function watcher() {
     gulp.watch(path.watch.js, js)
 }
 
-const fonts =  gulp.series(otfToTtf, ttfToWoff, fontsStyle)
+const fonts =  gulp.series(fontsStyle)
 
 const mainTask =  gulp.series(fonts, gulp.parallel(img, svg, scss, js))
 

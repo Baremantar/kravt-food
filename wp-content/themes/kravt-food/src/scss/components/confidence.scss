@@ -1,0 +1,246 @@
+.confidence {
+  margin-top: 160px;
+
+  .splide {
+    overflow: hidden;
+    &__list {
+      display: flex;
+    }
+
+    &__track {
+      display: flex;
+      flex-direction: column;
+      gap: 26px;
+    }
+
+    &__slide {
+      display: grid;
+      grid-template-areas: 'a b''a c';
+      grid-template-columns: 788px 1fr;
+      gap: 24px;
+      min-width: 1368px;
+
+      .grid-item {
+        &:nth-child(1) {
+          grid-area: a;
+          display: flex;
+          flex-direction: column;
+          gap: 64px;
+
+          .head {
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+
+            p {
+              font-size: 20px;
+              line-height: 140%;
+            }
+          }
+
+
+        }
+
+        &:nth-child(1),
+        &:nth-child(2) {
+          .card {
+            display: flex;
+            position: relative;
+            min-height: 522px;
+            border-radius: 12px;
+            overflow: hidden;
+
+            img {
+              left: 0;
+              top: 0;
+              object-fit: cover;
+              position: absolute;
+              height: 100%;
+              width: 100%;
+            }
+
+            a {
+              position: absolute;
+              top: 23px;
+              right: 16px;
+            }
+
+            .bottom-area {
+              align-self: flex-end;
+              justify-self: flex-end;
+              max-height: 175px;
+              width: 100%;
+              z-index: 1;
+              background: rgba(255, 255, 255, 0.72);
+              border-radius: 10px;
+              padding: 12px;
+              margin: 0 24px 20px 24px;
+              position: relative;
+
+              div {
+                border-radius: 10px;
+
+                &:nth-child(1) {
+                  display: flex;
+                  flex-direction: column;
+                  z-index: 1;
+                  position: relative;
+
+                  span {
+
+                    &:nth-child(1) {
+                      font-weight: 600;
+                      font-size: 22px;
+                      line-height: 130%;
+                    }
+
+                    &:nth-child(2) {
+                      color: $grey;
+                      margin-top: 8px;
+                      margin-bottom: 10px;
+                    }
+
+                    &:nth-child(6) {
+                      align-self: flex-end;
+                      font-weight: 600;
+                      margin-top: 9px;
+                      cursor: pointer;
+                    }
+                  }
+
+                  p {
+                    &:nth-child(3) {
+                      -webkit-line-clamp: 2;
+                      overflow: hidden;
+                      -webkit-box-orient: vertical;
+                      display: -webkit-box;
+                    }
+
+                    &:nth-child(4) {
+                      display: none;
+                    }
+
+                    &:nth-child(5) {
+                      display: none;
+                    }
+                  }
+                }
+
+                &:nth-child(2) {
+                  display: block;
+                  width: 100%;
+                  height: 100%;
+                  position: absolute;
+                  left: 0;
+                  top: 0;
+                  backdrop-filter: blur(12px);
+                  z-index: 0;
+                }
+              }
+            }
+          }
+        }
+
+        &:nth-child(2) {
+          .card {
+            min-height: 370px;
+
+            a {
+              top: 24px;
+              right: 24px;
+            }
+
+            div {
+              span {
+                &:nth-child(4) {
+                  align-self: flex-end;
+                  font-weight: 600;
+                  margin-top: 12px;
+                  cursor: pointer;
+                }
+              }
+            }
+          }
+        }
+
+        &:nth-child(3) {
+          .card {
+            display: flex;
+            flex-direction: column;
+            padding: 39px 23px;
+            border: 1px solid $orange;
+            border-radius: 12px;
+            gap: 10px;
+
+            .top {
+              display: flex;
+              gap: 28px;
+              align-items: center;
+
+              .image {
+                position: relative;
+
+                img {
+                  position: relative;
+                  bottom: 10px;
+                  left: 6px;
+                }
+
+                a {
+                  position: absolute;
+                  bottom: -8px;
+                  z-index: 1;
+                  right: -15px;
+                }
+              }
+
+              .head {
+                display: flex;
+                flex-direction: column;
+                gap: 6px;
+                margin-bottom: 22px;
+
+                span {
+                  &:first-child {
+                    font-weight: 600;
+                    font-size: 22px;
+                  }
+
+                  &:last-child {
+                    color: $grey;
+                  }
+                }
+              }
+
+            }
+            .bottom {
+              p {
+                line-height: 22px;
+              }
+              
+            }
+          }
+        }
+      }
+    }
+
+    &__arrows {
+      display: flex;
+      justify-content: flex-end;
+      gap: 24px;
+    }
+
+    &__arrow {
+      border: none;
+      background-color: transparent;
+      width: fit-content;
+      height: fit-content;
+    }
+
+    &__arrow--next {
+      img {
+        transform: rotate(180deg);
+      }
+    }
+  }
+}
