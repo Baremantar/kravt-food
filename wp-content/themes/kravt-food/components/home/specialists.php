@@ -15,7 +15,7 @@ $data = get_field( 'main-section_8' );
                         aria-label="Previous slide"
                         aria-controls="splide01-track"
                 >
-                    <img src="/wp-content/themes/kravt-food/src/img/arrow.png" alt="arrow">
+                    <img src="<?= get_template_directory_uri().'/src/img/arrow.png'?>" alt="arrow">
                 </button>
                 <button
                         class="splide__arrow splide__arrow--next"
@@ -23,7 +23,7 @@ $data = get_field( 'main-section_8' );
                         aria-label="Next slide"
                         aria-controls="splide01-track"
                 >
-                    <img src="/wp-content/themes/kravt-food/src/img/arrow.png" alt="arrow">
+                    <img src="<?= get_template_directory_uri().'/src/img/arrow.png'?>" alt="arrow">
                 </button>
             </div>
             <ul class="splide__list">

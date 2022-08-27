@@ -61,10 +61,26 @@
       }
     }
 
-    .abs {
+    .wheel {
       position: absolute;
       left: calc(50% - 117px - 55px);
       bottom: -97px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 228px;
+      height: 228px;
+      background-color: $white;
+      border-radius: 50%;
+
+      svg {
+        position: absolute;
+        -webkit-animation: rotating 20s linear infinite;
+        -moz-animation: rotating 20s linear infinite;
+        -ms-animation: rotating 20s linear infinite;
+        -o-animation: rotating 20s linear infinite;
+        animation: rotating 20s linear infinite;
+      }
     }
   }
 }

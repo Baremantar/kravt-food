@@ -4,8 +4,8 @@ $data = get_field( 'main-section_6' );
 
 <section class="container menus">
     <div class="head">
-        <span class="menus-info">Меню имеет ознакомительный характер. Блюда и ингридиенты могут быть заменены с учетом индивидуальных потребностей.</span>
 		<?= $data['head'] ?>
+        <span class="menus-info">Меню имеет ознакомительный характер. Блюда и ингридиенты могут быть заменены с учетом индивидуальных потребностей.</span>
     </div>
     <div class="slider">
         <div class="top">
@@ -92,7 +92,7 @@ $data = get_field( 'main-section_6' );
                                 aria-label="Previous slide"
                                 aria-controls="splide01-track"
                         >
-                            <img src="/wp-content/themes/kravt-food/src/img/arrow.png" alt="arrow">
+                            <img src="<?= get_template_directory_uri().'/src/img/arrow.png'?>" alt="arrow">
                         </button>
                         <button
                                 class="splide__arrow splide__arrow--next"
@@ -100,7 +100,7 @@ $data = get_field( 'main-section_6' );
                                 aria-label="Next slide"
                                 aria-controls="splide01-track"
                         >
-                            <img src="/wp-content/themes/kravt-food/src/img/arrow.png" alt="arrow">
+                            <img src="<?= get_template_directory_uri().'/src/img/arrow.png'?>" alt="arrow">
                         </button>
                     </div>
                     <ul class="splide__list">

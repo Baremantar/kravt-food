@@ -16,6 +16,9 @@
                 <a href="<?= get_field('main-section_3')['wa_link'] ?>"><?= file_get_contents( get_stylesheet_directory() . '/src/svg/whatsapp.svg' ) ?></a>
             </div>
         </div>
-        <img class="abs" src='/wp-content/themes/kravt-food/build/img/dw.png' alt="kravt-food">
+        <div class="wheel">
+            <img src='<?= get_template_directory_uri().'/build/img/dishes1.png'?>' alt="kravt-food">
+            <?= file_get_contents(get_template_directory_uri().'/src/svg/rotate-words4.svg') ?>
+        </div>
     </div>
 </section>

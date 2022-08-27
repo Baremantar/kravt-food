@@ -78,8 +78,8 @@
 
           button {
             margin-top: 23px;
-           font-weight: 600;
-           padding: 14px 50px;
+            font-weight: 600;
+            padding: 14px 50px;
 
 
           }
@@ -112,11 +112,29 @@
 
   }
 
-  .abs2 {
+  .wheel {
     position: absolute;
-    right: 472px;
-    top: -49px;
-    object-fit: cover;
-    border-radius: 50%;
+    right: 469px;
+    top: -52px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 208px;
+    height: 208px;
+
+    img {
+      border-radius: 50%;
+      border: 8px solid $white;
+      max-width: 168px;
+    }
+
+    svg {
+      position: absolute;
+      -webkit-animation: rotating 20s linear infinite;
+      -moz-animation: rotating 20s linear infinite;
+      -ms-animation: rotating 20s linear infinite;
+      -o-animation: rotating 20s linear infinite;
+      animation: rotating 20s linear infinite;
+    }
   }
 }

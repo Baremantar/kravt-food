@@ -72,7 +72,7 @@ echo file_get_contents( get_stylesheet_directory() . '/src/svg/arrow.svg' );
             <div class="header-manager">
                 <div class="manager-person">
                     <img src="<?= get_field( 'main-section_3' )['image']['url'] ?>" alt="manager">
-		            <?= get_field( 'main-section_3' )['text'] ?>
+					<?= get_field( 'main-section_3' )['text'] ?>
                 </div>
                 <div class="manager-link">
                     <a href="<?= get_field( 'main-section_3' )['tg_link'] ?>"><?= file_get_contents( get_stylesheet_directory() . '/src/svg/telegram.svg' ) ?></a>

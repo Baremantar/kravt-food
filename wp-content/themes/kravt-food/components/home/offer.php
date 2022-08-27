@@ -7,7 +7,7 @@ $data = get_field( 'main-section_7' );
 		<?= $data['head'] ?>
         <div class="block">
             <div>
-                <img src="/wp-content/themes/kravt-food/build/img/Frame12745.png" alt="bowl">
+                <img src="<?= get_template_directory_uri() . '/build/img/Frame12745.png' ?>" alt="bowl">
             </div>
             <div></div>
             <div>
@@ -29,7 +29,10 @@ $data = get_field( 'main-section_7' );
             </div>
         </div>
 
-        <img class="abs1" src="/wp-content/themes/kravt-food/build/img/bowl1.png" alt="bowl">
+        <img class="abs1" src="<?= get_template_directory_uri() . '/build/img/bowl1.png' ?>" alt="bowl">
     </div>
-    <img class="abs2" src="/wp-content/themes/kravt-food/build/img/Frame684.png" alt="girl in frame">
+    <div class="wheel">
+        <img src="<?= get_template_directory_uri() . '/build/img/girls-round.png' ?>" alt="girl in frame">
+		<?= file_get_contents( get_template_directory_uri() . '/src/svg/rotate-words2.svg' ) ?>
+    </div>
 </section>

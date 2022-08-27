@@ -70,10 +70,8 @@ function slider() {
 
     if (document.getElementsByClassName("reviews")) {
         new Splide('.reviews', {
-            type: 'slider',
-            pagination: false,
-            perMove: 1,
-            perPage: 1,
+            type  : 'fade',
+            rewind: true,
         }).mount();
     }
 }

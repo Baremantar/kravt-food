@@ -15,12 +15,35 @@
         margin-left: 59px;
       }
 
-      img {
+      .wheel {
+        display: flex;
+        align-items: center;
+        justify-content: center;
         position: absolute;
         left: 55.9%;
         transform: translateX(-50%);
         top: calc(100% + 17px);
+        width: 286px;
+        height: 286px;
+        background-color: $white;
+        border-radius: 50%;
+
+        img {
+          &:first-child {
+            z-index: 1;
+          }
+
+        }
+          svg {
+            position: absolute;
+            -webkit-animation: rotating 20s linear infinite;
+            -moz-animation: rotating 20s linear infinite;
+            -ms-animation: rotating 20s linear infinite;
+            -o-animation: rotating 20s linear infinite;
+            animation: rotating 20s linear infinite;
+          }
       }
+
     }
 
     &:last-child {
@@ -62,11 +85,13 @@
             margin-top: 6px;
           }
         }
+
         &:nth-child(3) {
           svg {
             margin-top: 8px;
           }
         }
+
         &:nth-child(4 ) {
           svg {
             margin-top: 7px;
@@ -100,6 +125,7 @@
         h2 {
           margin-left: 54px;
         }
-      }}
+      }
+    }
   }
 }

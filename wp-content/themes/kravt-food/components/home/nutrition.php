@@ -26,13 +26,13 @@
                 <p class="text2">Несколько видов рыбы, морепродукты, птица, постная говядина, молочные продукты,
                     крупы, овощи,
                     фрукты</p>
-                <img src="/wp-content/themes/kravt-food/build/img/bowl.png" alt="bowl with vegetables">
+                <img src="<?= get_template_directory_uri().'/build/img/bowl.png'?>" alt="bowl with vegetables">
             </div>
             <div class="block">
                 <div>
-                    <img src="/wp-content/themes/kravt-food/build/img/3.png" alt="">
-                    <img src="/wp-content/themes/kravt-food/build/img/2.png" alt="">
-                    <img src="/wp-content/themes/kravt-food/build/img/1.png" alt="">
+                    <img src="<?= get_template_directory_uri().'/build/img/3.png'?>" alt="">
+                    <img src="<?= get_template_directory_uri().'/build/img/2.png'?>" alt="">
+                    <img src="<?= get_template_directory_uri().'/build/img/1.png'?>" alt="">
                 </div>
                 <p class="text1">Помощь нутрициолога</p>
                 <p class="text2">Ведем вас с первых дней, помогаем советами и отвечаем на вопросы, связанные с
@@ -42,7 +42,7 @@
                 <p class="text1">Все необходимое</p>
                 <p class="text2">Удобная термосумка, прочные столовые приборы, плотные салфетки, бутылка родниковой
                     воды</p>
-                <img src="/wp-content/themes/kravt-food/build/img/eco.png" alt="">
+                <img src="<?= get_template_directory_uri().'/build/img/eco.png'?>" alt="">
             </div>
         </div>
         <div class="wrapper-item">

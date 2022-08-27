@@ -1,13 +1,13 @@
 <section class="container which_program">
     <div class="wrapper">
-    <h2>Не знаете, какую
+    <h2>Не знаете, каkraкую
         <button>
             подобрать рацион
 		    <?= file_get_contents( get_template_directory() . '/src/svg/Arrow2.svg' ) ?>
         </button>
     </h2>
         <h2>
-            <img src="wp-content/themes/kravt-food/build/img/managers.png" alt="managers">
+            <img src="<?= get_template_directory_uri().'/build/img/managers.png'?>" alt="managers">
             <em>
                 программу
             </em>

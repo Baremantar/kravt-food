@@ -44,12 +44,29 @@
       }
     }
 
-    img {
-      &:nth-child(3) {
+    .wheel {
+      position: absolute;
+      right: 85px;
+      top: -60px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 286px;
+      height: 286px;
+      border-radius: 50%;
+      background-color: $white;
+
+      svg {
         position: absolute;
-        right: 85px;
-        top: -67px;
+        -webkit-animation: rotating 20s linear infinite;
+        -moz-animation: rotating 20s linear infinite;
+        -ms-animation: rotating 20s linear infinite;
+        -o-animation: rotating 20s linear infinite;
+        animation: rotating 20s linear infinite;
       }
+    }
+
+    img {
 
       &:nth-child(4) {
         top: 544px;

@@ -254,9 +254,23 @@
       right: 467px;
       font-size: 24px;
 
+      &:hover {
+        color: $white;
+
+        svg {
+          path {
+            stroke: $white;
+          }
+        }
+      }
+
       svg {
         position: absolute;
         top: 43px;
+
+        path {
+          transition: all .3s ease;
+        }
       }
     }
   }
