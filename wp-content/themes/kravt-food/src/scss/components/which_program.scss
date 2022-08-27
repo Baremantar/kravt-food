@@ -1,0 +1,42 @@
+.which_program {
+  margin-top: 160px;
+
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    max-width: 1368px;
+    width: 100%;
+
+    h2 {
+      display: flex;
+      align-items: center;
+
+      &:first-child {
+        gap: 29px;
+
+        button {
+          max-height: 72px;
+          padding: 0 58.5px;
+        }
+      }
+
+      &:nth-child(2) {
+        gap: 15px;
+        margin-top: 5px;
+
+        img {
+          margin-right: 21px;
+        }
+
+      }
+    }
+
+    p {
+      margin-top: 48px;
+      max-width: 509px;
+      font-size: 20px;
+      line-height: 140%;
+    }
+  }
+}

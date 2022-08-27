@@ -17,6 +17,7 @@ export const path = {
     scss: `${srcFolder}/scss/index.scss`,
     img: `${srcFolder}/img/*.{jpg,jpeg,png,gif,webp}`,
     svg: `${srcFolder}/svg/*.svg`,
+    fonts: `${srcFolder}/fonts/woff/*.{woff, woff2}`,
   },
   watch: {
     js: `${srcFolder}/js/**/*.js`,
