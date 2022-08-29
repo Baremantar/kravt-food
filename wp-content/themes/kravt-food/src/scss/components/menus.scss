@@ -1,293 +1,3 @@
-<<<<<<< HEAD:wp-content/themes/kravt-food/src/scss/components/home/menus.scss
-.menus {
-  align-items: start;
-  padding-left: 60px;
-  margin-top: -110px;
-
-  .head {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    max-width: 634px;
-    position: relative;
-    gap: 3px;
-
-
-    span {
-      top: -91px;
-      left: 196px;
-      padding: 8px 20px;
-      display: flex;
-      position: absolute;
-      width: 100%;
-      max-width: 384px;
-      background: $white;
-      box-shadow: 0px 10px 23px rgba(9, 11, 10, 0.06);
-      border-radius: 8px;
-      opacity: 0;
-      overflow: hidden;
-      transition:  all .3s ease;
-
-      &.active {
-        opacity: 1;
-        overflow: visible;
-      }
-    }
-
-    h3 {
-      display: flex;
-
-      &:first-child {
-        align-self: start;
-        gap: 12px;
-
-        img {
-          position: relative;
-          bottom: 12px;
-          left: 4px;
-          cursor: pointer;
-        }
-      }
-
-      &:last-child {
-        align-self: end;
-      }
-    }
-  }
-
-  .slider {
-    margin-top: 66px;
-    max-width: 1368px;
-    padding: 0;
-    overflow: hidden;
-
-    .top {
-      display: flex;
-      gap: 31px;
-      align-items: center;
-
-      .data-start {
-        display: flex;
-        flex-direction: column;
-        gap: 8px;
-
-        #data-start {
-          padding: 10px 20px;
-          gap: 19px;
-        }
-
-        span {
-          &:first-child {
-          }
-
-          &:last-child {
-            display: flex;
-            align-items: center;
-            border-radius: 8px;
-            padding: 12px 20px;
-            gap: 27px;
-            border: 1px solid $grey-border;
-
-          }
-        }
-      }
-
-      .data-days {
-        display: flex;
-        gap: 16px;
-
-        div {
-          display: flex;
-
-          label {
-            text-transform: uppercase;
-            min-height: 81px;
-            font-weight: 600;
-            transition: border ease .3s;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            flex-wrap: wrap;
-            border: 1px solid $grey-border;
-            height: 100%;
-            width: 100%;
-            padding: 16px 11px;
-            cursor: pointer;
-            border-radius: 8px;
-            position: relative;
-
-            span {
-              font-weight: 400;
-              font-size: 14px;
-            }
-          }
-
-          input[type="radio"] {
-            opacity: 0;
-            width: 0;
-            height: 0;
-          }
-
-          input[type="radio"]:active ~ label {
-            opacity: 1;
-          }
-
-          input[type="radio"]:checked ~ label {
-            opacity: 1;
-            background-color: $green;
-            color: $white;
-            border-color: transparent;
-          }
-        }
-
-      }
-
-      .data-amount {
-        display: flex;
-        gap: 28px;
-
-        span {
-          font-size: 16px;
-          color: $grey;
-
-          strong {
-            font-size: 20px;
-            color: $black-middle;
-          }
-        }
-      }
-
-    }
-
-    .bottom {
-      margin-top: 48px;
-
-      .menu {
-        position: relative;
-        max-height: 447px;
-
-        .splide {
-          &__arrows {
-            position: absolute;
-            top: -109px;
-            right: 0px;
-            display: flex;
-            gap: 24px;
-          }
-
-          &__arrow {
-            border: none;
-            background-color: transparent;
-            width: fit-content;
-            height: fit-content;
-          }
-
-          &__arrow--next {
-            img {
-              transform: rotate(180deg);
-            }
-          }
-
-          &__list {
-            gap: 24px;
-            display: flex;
-          }
-
-          &__slide {
-            .wrapper-card {
-              display: flex;
-              flex-direction: column;
-              position: relative;
-              justify-content: center;
-
-              img {
-                position: relative;
-                align-self: center;
-                z-index: 1;
-                max-height: 230px;
-                max-width: 230px;
-
-              }
-
-              .text {
-                position: relative;
-                display: flex;
-                flex-direction: column;
-                background-color: $white;
-                border: 1px solid $grey-border;
-                border-radius: 12px;
-                padding: 118px 20px 19px;
-                gap: 12px;
-                min-width: 324px;
-                margin-top: -115px;
-
-                span {
-                  display: flex;
-                  width: fit-content;
-                  padding: 6px 14px;
-                  border-radius: 32px;
-                  font-size: 14px;
-
-                  &[data-text='Завтрак'] {
-                    background-color: $green-accent;
-                  }
-
-                  &[data-text='Перекус'] {
-                    background-color: $yellow-lighter;
-                  }
-
-                  &[data-text='Обед'] {
-                    background-color: $red-lighter;
-                  }
-
-                  &[data-text='Ужин'] {
-                    background-color: $blue-lighter;
-                  }
-
-                  &[data-text='Полдник'] {
-                  }
-                }
-
-                p {
-                  font-weight: 600;
-                  font-size: 20px;
-                  line-height: 130%;
-                }
-
-                div {
-                  display: flex;
-                  gap: 0;
-                  justify-content: space-between;
-                  flex-direction: row;
-                  margin-top: 12px;
-
-                  span {
-                    font-weight: 500;
-                    font-size: 14px;
-                    line-height: 150%;
-                    color: $grey-middle;
-                    padding: 0;
-                    margin-top: 13px;
-                  }
-
-                  button {
-                    font-size: 16px;
-                    line-height: 140%;
-                    padding: 9.5px 19.5px;
-                  }
-                }
-              }
-            }
-          }
-
-
-        }
-      }
-    }
-  }
-=======
 .menus {
   align-items: flex-start;
   padding-left: 60px;
@@ -301,7 +11,6 @@
     position: relative;
     gap: 3px;
 
-
     span {
       top: -91px;
       left: 196px;
@@ -315,7 +24,7 @@
       border-radius: 8px;
       opacity: 0;
       overflow: hidden;
-      transition:  all .3s ease;
+      transition: all 0.3s ease;
 
       &.active {
         opacity: 1;
@@ -376,7 +85,6 @@
             padding: 12px 20px;
             gap: 27px;
             border: 1px solid $grey-border;
-
           }
         }
       }
@@ -392,7 +100,7 @@
             text-transform: uppercase;
             min-height: 81px;
             font-weight: 600;
-            transition: border ease .3s;
+            transition: border ease 0.3s;
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -430,7 +138,6 @@
             border-color: transparent;
           }
         }
-
       }
 
       .data-amount {
@@ -447,7 +154,6 @@
           }
         }
       }
-
     }
 
     .bottom {
@@ -497,7 +203,6 @@
                 z-index: 1;
                 max-height: 230px;
                 max-width: 230px;
-
               }
 
               .text {
@@ -513,30 +218,6 @@
                 margin-top: -115px;
 
                 span {
-                  display: flex;
-                  width: fit-content;
-                  padding: 6px 14px;
-                  border-radius: 32px;
-                  font-size: 14px;
-
-                  &[data-text='Завтрак'] {
-                    background-color: $green-accent;
-                  }
-
-                  &[data-text='Перекус'] {
-                    background-color: $yellow-lighter;
-                  }
-
-                  &[data-text='Обед'] {
-                    background-color: $red-lighter;
-                  }
-
-                  &[data-text='Ужин'] {
-                    background-color: $blue-lighter;
-                  }
-
-                  &[data-text='Полдник'] {
-                  }
                 }
 
                 p {
@@ -570,11 +251,96 @@
               }
             }
           }
-
-
         }
       }
     }
   }
->>>>>>> 20e18c58d6330a7a5da435d4f1847f46e99bf2de:wp-content/themes/kravt-food/src/scss/components/menus.scss
+}
+span {
+  &[data-meal_type] {
+    display: flex;
+    width: fit-content;
+    padding: 6px 14px;
+    border-radius: 32px;
+    font-size: 14px;
+  }
+  &[data-meal_type="Завтрак"] {
+    background-color: $green-accent;
+  }
+
+  &[data-meal_type="Перекус"] {
+    background-color: $yellow-lighter;
+  }
+
+  &[data-meal_type="Обед"] {
+    background-color: $red-lighter;
+  }
+
+  &[data-meal_type="Ужин"] {
+    background-color: $blue-lighter;
+  }
+
+  &[data-meal_type="Полдник"] {
+  }
+}
+
+.menu-card {
+  max-height: 636px;
+  max-width: 1164px;
+  
+  .wrapper {
+    .block {
+      display: flex;
+      flex-direction: column;
+      &:first-child {
+        align-items: center;
+      }
+      &:last-child {
+        max-width: 464px;
+      }
+    }
+    #meal {
+      &_name {
+        font-weight: 600;
+        font-size: 28px;
+        line-height: 130%;
+        margin-top: 12px;
+      }
+      &_ccal {
+        margin-top: 24px;
+        font-weight: 500;
+        font-size: 14px;
+        color: $grey-middle;
+      }
+      &_composition {
+        line-height: 140%;
+        margin-top: 24px;
+        padding: 24px 0;
+        border-top: 1px solid $grey-light;
+        border-bottom: 1px solid $grey-light;
+        span {
+          color: $grey;
+        }
+        p {
+          margin-top: 12px;
+        }
+      }
+      &_nutritional {
+        margin-top: 24px;
+        span {
+          color: $grey-light;
+        }
+        div {
+          margin-top: 12px;
+          display: flex;
+          gap: 50px;
+        }
+      }
+    }
+    img {
+      min-width: 476px;
+    }
+  }
+
+  
 }

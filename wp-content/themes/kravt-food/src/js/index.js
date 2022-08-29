@@ -6,6 +6,8 @@ import select from "./select.js";
 import map from "./ymap.js";
 import info from "./info.js";
 import orderCall from "./order-calls.js";
+import mealPopup  from "./menu-card.js"
+import orderMeal from './order_meal.js';
 
 window.onload = () => {
     console.log('document load and parced');
@@ -17,4 +19,6 @@ window.onload = () => {
     map;
     info;
     orderCall;
+    mealPopup;
+    orderMeal;
 }

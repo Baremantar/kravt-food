@@ -1,4 +1,3 @@
-<<<<<<< HEAD:wp-content/themes/kravt-food/src/scss/components/home/offer.scss
 .offer {
   margin-top: 133px;
   position: relative;
@@ -17,7 +16,7 @@
       text-transform: uppercase;
       margin-top: 10px;
       line-height: 130%;
-      font-family: 'Euclid';
+      font-family: "Euclid";
       text-transform: uppercase;
     }
 
@@ -31,7 +30,6 @@
       justify-content: space-between;
 
       div {
-
         &:nth-child(1) {
           img {
             margin-top: 20px;
@@ -81,8 +79,6 @@
             margin-top: 23px;
             font-weight: 600;
             padding: 14px 50px;
-
-
           }
 
           p:last-child {
@@ -110,7 +106,6 @@
       height: 730px;
       width: 730px;
     }
-
   }
 
   .wheel {
@@ -138,145 +133,235 @@
       animation: rotating 20s linear infinite;
     }
   }
-=======
-.offer {
-  margin-top: 133px;
-  position: relative;
+}
 
+.order-card {
+  max-width: 1164px;
+  max-height: 402px;
   .wrapper {
-    background-color: $pink-light;
-    border-radius: 16px;
-    padding: 50.5px 60px 61px;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    position: relative;
-    overflow: hidden;
-
-    h4 {
-      text-transform: uppercase;
-      margin-top: 10px;
-      line-height: 130%;
-      font-family: 'Euclid';
-      text-transform: uppercase;
-    }
-
     .block {
       display: flex;
-      padding: 32px 32px 20px;
-      border-radius: 12px;
-      background-color: $white;
-      margin-top: 35px;
-      max-width: 742px;
-      justify-content: space-between;
-
-      div {
-
-        &:nth-child(1) {
-          img {
-            margin-top: 20px;
-          }
-        }
-
-        &:nth-child(2) {
-          display: flex;
-          width: 1px;
-          height: 193px;
-          background-color: $grey-border;
-          margin-left: 6px;
-        }
-
-        &:last-child {
+      flex-direction: column;
+      &:last-child {
+        max-width: 360px;
+        width: 100%;
+        justify-content: space-between;
+        div {
           display: flex;
           flex-direction: column;
-
-          P {
+          gap: 12px;
+          align-items: center;
+          span {
+            color: $grey;
+            font-size: 14px;
+          }
+        }
+      }
+    }
+    button {
+      padding: 19px 0;
+      width: 100%;
+    }
+  }
+  &.lite {
+    max-height: 521px;
+    .wrapper {
+      .block {
+        display: flex;
+        flex-direction: column;
+        input[type="text"] {
+          padding: 17px 17px 17px 44px;
+          border: 1px solid $grey-light2;
+          border-radius: 8px;
+          color: $black-middle;
+          font-size: 14px;
+          &::-webkit-input-placeholder {
+            color: $grey-middle;
+          }
+          &:nth-child(1) {
+            background: url("/wp-content/themes/kravt-food/src/svg/user.svg")
+              no-repeat scroll 18px 14px;
+          }
+          &:nth-child(2) {
+            background: url("/wp-content/themes/kravt-food/src/svg/phone.svg")
+              no-repeat scroll 18px 14px;
+          }
+        }
+        label {
+          font-size: 14px;
+          color: $grey-middle;
+          display: inline-flex;
+          align-items: center;
+          cursor: pointer;
+          input[type="checkbox"] {
+            margin: 0 10px 0 0;
+            border: 1px solid $grey-middle-light;
+            border-radius: 3px;
+          }
+        }
+        &:first-child {
+          gap: 20px;
+          max-width: 476px;
+        }
+        &:last-child {
+          max-width: 464px;
+          width: 100%;
+          gap: 32px;
+          input,
+          button {
+            max-width: 360px;
+          }
+          button {
+            padding: 18px 0;
+          }
+        }
+      }
+    }
+  }
+  &.full {
+    max-height: none;
+    max-width: 1368px;
+    .wrapper {
+      display: flex;
+      flex-direction: column;
+      justify-content: start;
+      .selected {
+        background: $pink-light;
+        border-radius: 16px;
+        max-width: none;
+        display: flex;
+        flex-direction: column;
+        gap: 7px;
+        padding: 27px 40px 40px 40px;
+        position: relative;
+        overflow: hidden;
+        margin-top: 43px;
+        h3 {
+          font-size: 32px;
+          text-transform: initial;
+        }
+        .min-wrapper {
+          display: flex;
+          max-width: 747px;
+          min-height: 216px;
+          flex-direction: row;
+          background-color: #fff;
+          border-radius: 16px;
+          padding: 34px;
+          justify-content: space-between;
+          div {
+            text-align: start;
+            height: 100%;
+            gap: 12px;
+            align-items: start;
+            justify-content: center;
+            flex-direction: column;
             display: flex;
-            justify-content: space-between;
-            align-items: center;
-
             span {
-              &:first-child {
-                color: $grey;
-                margin-top: 21px;
-              }
-
               &:last-child {
-                display: flex;
-                flex-direction: column;
-                text-align: end;
-                letter-spacing: -1.1px;
+                font-size: 14px;
+                b {
+                  font-size: 24px;
+                }
+              }
+            }
+            &:nth-child(2) {
+              padding: 0 32px;
+              border-left: 1px solid $grey-light;
+              border-right: 1px solid $grey-light;
+            }
+          }
+        }
+      }
+      .abs1 {
+        position: absolute;
+        max-width: 596px;
+        right: -233px;
+        top: -74px;
+        border-radius: 50%;
+      }
+      form {
+        margin-top: 40px;
+        .group {
+          span {
+            font-size: 20px;
+            color: $black-middle;
+            font-weight: 600;
+          }
+          display: flex;
+          gap: 24px;
+          flex-direction: column;
+          div {
+            display: flex;
+          }
+          &:nth-child(1) {
+            div {
+              gap: 24px;
+              display: flex;
+              input[type="text"] {
+                padding: 17px 17px 17px 44px;
+                border: 1px solid $grey-light2;
+                border-radius: 8px;
+                color: $black-middle;
+                font-size: 14px;
+                max-width: 320px;
+                width: 100%;
 
-                strong {
-                  letter-spacing: 0px;
-                  font-size: 32px;
-                  line-height: 130%;
-                  color: $black-middle;
+                &::-webkit-input-placeholder {
+                  color: $grey-middle;
+                }
+                &:nth-child(1) {
+                  background: url("/wp-content/themes/kravt-food/src/svg/user.svg")
+                    no-repeat scroll 18px 14px;
+                }
+                &:nth-child(2) {
+                  background: url("/wp-content/themes/kravt-food/src/svg/phone.svg")
+                    no-repeat scroll 18px 14px;
+                }
+                &:nth-child(3) {
+                  background: url("/wp-content/themes/kravt-food/src/svg/mail.svg")
+                    no-repeat scroll 18px 14px;
                 }
               }
             }
           }
-
-          button {
-            margin-top: 23px;
-            font-weight: 600;
-            padding: 14px 50px;
-
-
-          }
-
-          p:last-child {
-            justify-content: center;
-            gap: 8px;
-            margin-top: 4px;
-            align-items: center;
-            font-size: 14px;
-
-            svg {
-              width: 24px;
+          &:nth-child(2) {
+            margin-top: 40px;
+            gap: 24px;
+            div {
+              input {
+                padding: 17px;
+                border: 1px solid $grey-light2;
+                color: $black-middle;
+                font-size: 14px;
+                border-radius: 8px;
+                width: 100%;
+                &::-webkit-input-placeholder {
+                  color: $grey-middle;
+                }
+              }
+              &:nth-child(2) {
+                gap: 24px;
+                input {
+                  max-width: 320px;
+                }
+                #order-meal_town {
+                  padding: 17px 17px 17px 44px;
+                  max-width: 320px;
+                  background: url("/wp-content/themes/kravt-food/src/svg/pinw.svg")
+                    no-repeat scroll 18px 14px;
+                }
+              }
+              &:nth-child(3) {
+                gap: 24px;
+                input {
+                  max-width: 182px;
+                }
+              }
             }
           }
         }
       }
     }
-
-    .abs1 {
-      position: absolute;
-      right: -114px;
-      top: -90px;
-      -o-object-fit: cover;
-      object-fit: cover;
-      border-radius: 50%;
-      height: 730px;
-      width: 730px;
-    }
-
   }
-
-  .wheel {
-    position: absolute;
-    right: 469px;
-    top: -52px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 208px;
-    height: 208px;
-
-    img {
-      border-radius: 50%;
-      border: 8px solid $white;
-      max-width: 168px;
-    }
-
-    svg {
-      position: absolute;
-      -webkit-animation: rotating 20s linear infinite;
-      -moz-animation: rotating 20s linear infinite;
-      -ms-animation: rotating 20s linear infinite;
-      -o-animation: rotating 20s linear infinite;
-      animation: rotating 20s linear infinite;
-    }
-  }
->>>>>>> 20e18c58d6330a7a5da435d4f1847f46e99bf2de:wp-content/themes/kravt-food/src/scss/components/offer.scss
 }

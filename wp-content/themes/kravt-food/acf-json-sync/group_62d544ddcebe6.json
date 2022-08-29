@@ -946,6 +946,105 @@
                                             "placeholder": "",
                                             "prepend": "",
                                             "append": ""
+                                        },
+                                        {
+                                            "key": "field_6309ec8f7fe2e",
+                                            "label": "Состав",
+                                            "name": "composition",
+                                            "type": "text",
+                                            "instructions": "",
+                                            "required": 0,
+                                            "conditional_logic": 0,
+                                            "wrapper": {
+                                                "width": "",
+                                                "class": "",
+                                                "id": ""
+                                            },
+                                            "default_value": "",
+                                            "placeholder": "",
+                                            "prepend": "",
+                                            "append": "",
+                                            "maxlength": ""
+                                        },
+                                        {
+                                            "key": "field_6309eca17fe2f",
+                                            "label": "Количество питательных веществ",
+                                            "name": "nutrients",
+                                            "type": "group",
+                                            "instructions": "",
+                                            "required": 0,
+                                            "conditional_logic": 0,
+                                            "wrapper": {
+                                                "width": "",
+                                                "class": "",
+                                                "id": ""
+                                            },
+                                            "layout": "block",
+                                            "sub_fields": [
+                                                {
+                                                    "key": "field_6309ed0d7fe30",
+                                                    "label": "Белки",
+                                                    "name": "proteins",
+                                                    "type": "number",
+                                                    "instructions": "",
+                                                    "required": 0,
+                                                    "conditional_logic": 0,
+                                                    "wrapper": {
+                                                        "width": "",
+                                                        "class": "",
+                                                        "id": ""
+                                                    },
+                                                    "default_value": "",
+                                                    "placeholder": "",
+                                                    "prepend": "",
+                                                    "append": "",
+                                                    "min": "",
+                                                    "max": "",
+                                                    "step": ""
+                                                },
+                                                {
+                                                    "key": "field_6309ed177fe31",
+                                                    "label": "Жиры",
+                                                    "name": "fat",
+                                                    "type": "number",
+                                                    "instructions": "",
+                                                    "required": 0,
+                                                    "conditional_logic": 0,
+                                                    "wrapper": {
+                                                        "width": "",
+                                                        "class": "",
+                                                        "id": ""
+                                                    },
+                                                    "default_value": "",
+                                                    "placeholder": "",
+                                                    "prepend": "",
+                                                    "append": "",
+                                                    "min": "",
+                                                    "max": "",
+                                                    "step": ""
+                                                },
+                                                {
+                                                    "key": "field_6309ed1c7fe32",
+                                                    "label": "Углеводы",
+                                                    "name": "carbohydrates",
+                                                    "type": "number",
+                                                    "instructions": "",
+                                                    "required": 0,
+                                                    "conditional_logic": 0,
+                                                    "wrapper": {
+                                                        "width": "",
+                                                        "class": "",
+                                                        "id": ""
+                                                    },
+                                                    "default_value": "",
+                                                    "placeholder": "",
+                                                    "prepend": "",
+                                                    "append": "",
+                                                    "min": "",
+                                                    "max": "",
+                                                    "step": ""
+                                                }
+                                            ]
                                         }
                                     ]
                                 }
@@ -2024,5 +2123,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1660829544
+    "modified": 1661594972
 }

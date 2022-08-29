@@ -262,28 +262,9 @@ header {
 }
 
 .order-call {
-  display: flex;
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  width: 100%;
-  height: 100%;
-  transform: translate(-50%, -50%);
   max-width: 1164px;
   max-height: 521px;
-  background-color: $white;
-  justify-content: center;
-  align-items: center;
-  padding: 80px;
-  z-index: -1;
-  overflow: hidden;
-  opacity: 0;
-  border-radius: 16px;
-  transition: 0.3s opacity ease-in;
   .wrapper {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
     .block {
       display: flex;
       flex-direction: column;
@@ -349,56 +330,5 @@ header {
         }
       }
     }
-  }
-  .close {
-    cursor: pointer;
-    display: flex;
-    position: absolute;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-    max-width: 42px;
-    max-height: 42px;
-    border-radius: 50%;
-    background: #f0f1f0;
-    top: 35px;
-    right: 35px;
-
-    .plus {
-      display: flex;
-      height: 13px;
-      width: 13px;
-      position: relative;
-      z-index: 2;
-      transition: 0.3s all ease;
-      transform: rotate(45deg);
-
-      &:before,
-      &:after {
-        position: absolute;
-        content: "";
-        display: block;
-        background: $grey-middle;
-        border-radius: 2px;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-      }
-      &:before {
-        height: 100%;
-        width: 2px;
-      }
-
-      &:after {
-        height: 2px;
-        width: 100%;
-      }
-    }
-  }
-  &.active {
-    z-index: 3;
-    overflow: visible;
-    opacity: 1;
   }
 }

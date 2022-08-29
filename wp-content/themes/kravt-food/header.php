@@ -124,7 +124,7 @@ function isMobile()
 			<?php } ?>
 	</header>
 	<div id="background-popup"></div>
-	<div class="order-call">
+	<div class="order-call modal">
 		<span class="close">
 			<span class="plus"></span>
 		</span>
